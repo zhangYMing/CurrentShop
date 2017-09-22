@@ -2,8 +2,6 @@
 	Layout = null;
 }
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Demo</title>
@@ -11,19 +9,9 @@
 	<link rel="stylesheet" href="~/Content/css/index.css">
 </head>
 <body>
-
 	<header class="header">
 		<div class="header-inner body-width">
 			<a href="#" class="logo"></a>
-			<div class="category">
-				<a href="#" class="category-link">分类</a>
-				<i class="icon-arrow"></i>
-				<div class="category-result"></div>
-				<!-- 边框 -->
-				<span class="btn-border"></span>
-				<span class="result-border"></span>
-				<span class="neck-border"></span>
-			</div>
 			<div class="search">
 				<input type="text" class="search-text" placeholder="Seach here...">
 				<button class="search-btn"><i class="icon-search"></i></button>
@@ -660,6 +648,21 @@
 
 	<script src="~/Scripts/jquery-1.10.2.js"></script>
 	<script src="~/Scripts/script.js"></script>
-
 </body>
-</html>
+<script>
+	$(function () {
+		var winHeight = $(document).scrollTop();
+
+		$(window).scroll(function () {
+
+			var scrollY = $(document).scrollTop();// 获取垂直滚动的距离，即滚动了多少
+
+			if (scrollY > 210) { //如果滚动距离大于550px则隐藏，否则删除隐藏类
+				$('.header-inner').hide();
+			}
+			else {
+				$('.header-inner').show();
+			}
+		});
+	});
+</script>
