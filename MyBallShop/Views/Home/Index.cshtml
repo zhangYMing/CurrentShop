@@ -18,11 +18,11 @@
 			</div>
 			<nav class="header-nav">
 				<ul>
-					<li>
+					@*<li>
 						<span class="line"></span>
 						<a href="#" class="dreamer">tang生活家</a>
 						<i class="icon-text__pink icon-new">new</i>
-					</li>
+					</li>*@
 					<li>
 						<span class="line"></span>
 						<a href="#" class="icon-text__pink register">注册</a>
@@ -651,13 +651,14 @@
 </body>
 <script>
 	$(function () {
+
 		var winHeight = $(document).scrollTop();
 
 		$(window).scroll(function () {
 
 			var scrollY = $(document).scrollTop();// 获取垂直滚动的距离，即滚动了多少
 
-			if (scrollY > 210) { //如果滚动距离大于550px则隐藏，否则删除隐藏类
+			if (scrollY > 210) { //如果滚动距离大于210px则隐藏，否则删除隐藏类
 				$('.header-inner').hide();
 			}
 			else {
