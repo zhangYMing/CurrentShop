@@ -263,9 +263,7 @@
     <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\ok.png" />
-    <Content Include="Content\images\pexels-photo-350771.jpeg" />
-    <Content Include="Content\images\pexels-photo-428323.jpeg" />
-    <Content Include="Content\images\stock-photo-ball-basket-girl.jpg" />
+    <Content Include="Content\images\pexels-photo-305244.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
