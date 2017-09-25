@@ -1,16 +1,15 @@
 ﻿@{
 	Layout = null;
 }
-<!doctype html>
-<html lang="en">
+
 <head>
-	<meta charset="UTF-8" />
+	<meta charset="UTF-8"/>
 	<title></title>
 	<link rel="stylesheet" href="~/Content/css/acount/base.css" />
 	<link rel="stylesheet" href="~/Content/css/acount/layout.css" />
 	<script src="~/Scripts/jquery-1.10.2.js"></script>
 </head>
-<body>
+<body style="background-image:url(/Content/images/pexels-photo-428323.jpeg)">
 	<div id="wrapper">
 		<header id="header">
 			<div id="loginBar">
@@ -83,7 +82,7 @@
 					<div class="w330">
 						<strong class="f16">感谢注册，确认邮件已发送至你的注册邮箱 : <br />haibao1024@gmail.com</strong>
 						<p class="c7b">请进入邮箱查看邮件，并激活微信开放平台帐号。</p>
-						<p><a class="btn btn_primary mt20" href="javascript:;">登录邮箱</a></p>
+						<p><a id="btn_emailcheck" class="btn btn_primary mt20" href="javascript:;">登录邮箱</a></p>
 						<p class="c7b mt20">没有收到邮件？</p>
 						<p>1. 请检查邮箱地址是否正确，你可以返回 <a href="#" class="c46">重新填写</a></p>
 						<p>2. 检查你的邮件垃圾箱</p>
@@ -161,14 +160,21 @@
 					showTips('请再次输入您的密码~');
 				}else if(passwd != passwd2 || passwd2 != passwd){
 					showTips('两次密码输入不一致呢~');
-				}else if(verifyCode == ''){
-					showTips('请输入验证码~');
+				//}else if(verifyCode == ''){
+				//	showTips('请输入验证码~');
 				}else{
 					showTips('提交成功~ 即将进入下一步',2500,1);
 					//下一步
 					$('.processorBox li').removeClass('current').eq(1).addClass('current');
 					$('.step').fadeOut(300).eq(1).fadeIn(500);
 				}
+			});
+
+			$("#btn_emailcheck").click(function () {
+				showTips('登录成功~ 即将进入下一步', 2500, 1);
+				//下一步
+				$('.processorBox li').removeClass('current').eq(2).addClass('current');
+				$('.step').fadeOut(300).eq(2).fadeIn(500);
 			});
 
 			//切换步骤（目前只用来演示）
@@ -180,4 +186,3 @@
 		});
 	</script>
 </body>
-</html>
