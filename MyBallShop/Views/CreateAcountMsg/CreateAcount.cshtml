@@ -24,7 +24,7 @@
 					<li class="current">
 						<div class="step_inner fl">
 							<span class="icon_step">1</span>
-							<h4>填写基本信息</h4>
+							<h4>基本信息</h4>
 						</div>
 					</li>
 					<li>
@@ -36,7 +36,7 @@
 					<li>
 						<div class="step_inner fr">
 							<span class="icon_step">3</span>
-							<h4>完善开发者资料</h4>
+							<h4>完善资料</h4>
 						</div>
 					</li>
 				</ol>
@@ -178,11 +178,11 @@
 			});
 
 			//切换步骤（目前只用来演示）
-			//$('.processorBox li').click(function () {
-			//	var i = $(this).index();
-			//	$('.processorBox li').removeClass('current').eq(i).addClass('current');
-			//	$('.step').fadeOut(300).eq(i).fadeIn(500);
-			//});
+			$('.processorBox li').click(function () {
+				var i = $(this).index();
+				$('.processorBox li').removeClass('current').eq(i).addClass('current');
+				$('.step').fadeOut(300).eq(i).fadeIn(500);
+			});
 		});
 	</script>
 </body>
