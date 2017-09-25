@@ -179,9 +179,13 @@
 
 			//切换步骤（目前只用来演示）
 			$('.processorBox li').click(function () {
+				debugger
+				var b = $('.processorBox li .current').index();
 				var i = $(this).index();
-				$('.processorBox li').removeClass('current').eq(i).addClass('current');
-				$('.step').fadeOut(300).eq(i).fadeIn(500);
+				if (i < b) {
+					$('.processorBox li').removeClass('current').eq(i).addClass('current');
+					$('.step').fadeOut(300).eq(i).fadeIn(500);
+				}
 			});
 		});
 	</script>
