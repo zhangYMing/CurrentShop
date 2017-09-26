@@ -83,9 +83,9 @@ namespace MyBallShop.Repository
 			}
 			else
 			{
-				//this.Entities.Add(entity);
-				//this.db.SaveChanges();
-				this.db.Entry<TEntity>(entity).State = EntityState.Added;
+					this.Entities.Add(entity);
+					this.db.SaveChanges();
+					//this.db.Entry<TEntity>(entity).State = EntityState.Added;
 			}
 		}
 		catch (DbEntityValidationException dbEx)

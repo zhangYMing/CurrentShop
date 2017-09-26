@@ -24,8 +24,12 @@ namespace MyBallShop.Model.Model
 		/// </summary>
 		public String PHONENUMBER { get; set; }
 		/// <summary>
+		/// NAME
+		/// </summary>
+		public String NAME { get; set; }
+		/// <summary>
 		/// ADDRESS
 		/// </summary>
-		public String[] ADDRESS { get; set; }
+		public String ADDRESS { get; set; }
 	}
 }

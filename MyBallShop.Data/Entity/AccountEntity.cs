@@ -24,6 +24,10 @@ namespace MyBallShop.Data.Entity
 		/// </summary>
 		public String PASSWORD { get; set; }
 		/// <summary>
+		/// NAME
+		/// </summary>
+		public String NAME { get; set; }
+		/// <summary>
 		/// PHONENUMBER
 		/// </summary>
 		public String PHONENUMBER { get; set; }

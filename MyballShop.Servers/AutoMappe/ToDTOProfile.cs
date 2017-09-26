@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
+using MyBallShop.Data.Entity;
+using MyBallShop.Model.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace MyballShop.Servers.AutoMapper
+namespace MyballShop.Servers.AutoMappe
 {
 	public class ToDTOProfile : Profile
 	{
@@ -18,7 +20,7 @@ namespace MyballShop.Servers.AutoMapper
 
 		public ToDTOProfile()
 		{
-
+			CreateMap<AccountEntity, DTO_Account>();
 		}
 	}
 }

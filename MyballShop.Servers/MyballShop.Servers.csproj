@@ -121,13 +121,29 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoMapper\AutoMapperProfileRegister.cs" />
-    <Compile Include="AutoMapper\ToDTOProfile.cs" />
-    <Compile Include="AutoMapper\ToEntityProfile.cs" />
+    <Compile Include="AutoMappe\AutoMapperProfileRegister.cs" />
+    <Compile Include="AutoMappe\ToDTOProfile.cs" />
+    <Compile Include="AutoMappe\ToEntityProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\AccountServers.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Service\" />
+    <ProjectReference Include="..\MyBallShop.Data\MyBallShop.Data.csproj">
+      <Project>{d9a6828f-3140-4149-89b0-df4474a9ecc5}</Project>
+      <Name>MyBallShop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBallShop.Mapping\MyBallShop.Mapping.csproj">
+      <Project>{00e4b466-e4bf-4e58-9a9d-ce37e9cdd649}</Project>
+      <Name>MyBallShop.Mapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBallShop.Model\MyBallShop.Model.csproj">
+      <Project>{f8766408-393e-4719-b5bc-213876dda568}</Project>
+      <Name>MyBallShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBallShop.Repository\MyBallShop.Repository.csproj">
+      <Project>{cfd1279a-7414-40f0-bac7-8f9798fdf342}</Project>
+      <Name>MyBallShop.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

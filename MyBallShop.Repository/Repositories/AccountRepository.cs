@@ -20,38 +20,23 @@ namespace MyBallShop.Repository.Repositories
 			base.db = context;
 		}
 
-		public void New_Form(AccountEntity AccsessLogEntity)
+		public void New_Form(AccountEntity AccountEntity)
 		{
-			var LoginInfo = AccountProvider.Provider.GetCurrent();
-			AccsessLogEntity.M_GUID = Guid.NewGuid().ToString();
-			if (LoginInfo != null)
-			{
-				AccsessLogEntity.CREATEUSERID = LoginInfo.objectId;
-			}
-			AccsessLogEntity.CREATETIME = DateTime.Now;
-			Insert(AccsessLogEntity);
+			AccountEntity.M_GUID = Guid.NewGuid().ToString();
+			AccountEntity.CREATETIME = DateTime.Now;
+			Insert(AccountEntity);
 		}
 
-		public void Update_Form(AccountEntity AccsessLogEntity)
+		public void Update_Form(AccountEntity AccountEntity)
 		{
-			var LoginInfo = AccountProvider.Provider.GetCurrent();
-			if (LoginInfo != null)
-			{
-				AccsessLogEntity.MODIFYUSERID = LoginInfo.objectId;
-			}
-			AccsessLogEntity.MODIFYTIME = DateTime.Now;
-			Update(AccsessLogEntity);
+			AccountEntity.MODIFYTIME = DateTime.Now;
+			Update(AccountEntity);
 		}
 
-		public void Delete_Form(AccountEntity AccsessLogEntity)
+		public void Delete_Form(AccountEntity AccountEntity)
 		{
-			var LoginInfo = AccountProvider.Provider.GetCurrent();
-			if (LoginInfo != null)
-			{
-				AccsessLogEntity.MODIFYUSERID = LoginInfo.objectId;
-			}
-			AccsessLogEntity.MODIFYTIME = DateTime.Now;
-			Delete(AccsessLogEntity);
+			AccountEntity.MODIFYTIME = DateTime.Now;
+			Delete(AccountEntity);
 		}
 	}
 }

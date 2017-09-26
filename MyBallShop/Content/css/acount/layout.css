@@ -1,10 +1,4 @@
 ﻿@charset "utf-8";
-/*!
- * @名称：layout.css
- * @功能：自定义样式
- * @作者：haibao
- * @日期：2014-05-22
- */
 .w960 {
 	width: 960px;
 	margin: 0 auto;
@@ -141,7 +135,7 @@
 
 .content {
 	background-color: #ffffff;
-	padding: 120px 85px;
+	padding: 85px 85px;
 }
 
 .frm_control_group {
@@ -190,7 +184,7 @@
 }
 
 .verifycode .frm_input {
-	width: 98px;
+	width: 200px;
 }
 
 .verifycode img {

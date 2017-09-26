@@ -287,6 +287,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\gVerify.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -297,6 +298,7 @@
     <Content Include="Scripts\login\supersized-init.js" />
     <Content Include="Scripts\login\supersized.3.2.7.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\PCASClass.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\script.js" />
@@ -346,6 +348,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyBallShop.Data\MyBallShop.Data.csproj">
+      <Project>{d9a6828f-3140-4149-89b0-df4474a9ecc5}</Project>
+      <Name>MyBallShop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyBallShop.Model\MyBallShop.Model.csproj">
+      <Project>{f8766408-393e-4719-b5bc-213876dda568}</Project>
+      <Name>MyBallShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyballShop.Servers\MyballShop.Servers.csproj">
+      <Project>{30ec63eb-1b50-4e41-816d-22e32609072d}</Project>
+      <Name>MyballShop.Servers</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
