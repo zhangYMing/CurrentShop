@@ -214,6 +214,9 @@
     <Content Include="Content\css\acount\base.css" />
     <Content Include="Content\css\acount\layout.css" />
     <Content Include="Content\css\index.css" />
+    <Content Include="Content\css\login\reset.css" />
+    <Content Include="Content\css\login\style.css" />
+    <Content Include="Content\css\login\supersized.css" />
     <Content Include="Content\css\reset.css" />
     <Content Include="Content\images\1.png" />
     <Content Include="Content\images\app_qrcode.png" />
@@ -260,6 +263,9 @@
     <Content Include="Content\images\icon_arrow.png" />
     <Content Include="Content\images\icon_search.png" />
     <Content Include="Content\images\icon_sprite.png" />
+    <Content Include="Content\images\login\1.jpg" />
+    <Content Include="Content\images\login\2.jpg" />
+    <Content Include="Content\images\login\3.jpg" />
     <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\ok.png" />
@@ -284,6 +290,8 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\login\supersized-init.js" />
+    <Content Include="Scripts\login\supersized.3.2.7.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
@@ -300,8 +308,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -324,6 +330,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\CreateAcountMsg\CreateAcount.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -14,7 +14,7 @@
 		<header id="header">
 			<div id="loginBar">
 				<div class="w960 tr">
-					<a href="#">登录</a> <span class="sp">|</span> <a href="#">注册</a>
+					<a style="color:white !important;">已有账号?</a><span class="sp">|</span><a href="/Home/Login" style="color:white !important;">登录</a>
 				</div>
 			</div>
 		</header><!-- // header end -->
@@ -180,7 +180,7 @@
 			//切换步骤（目前只用来演示）
 			$('.processorBox li').click(function () {
 				debugger
-				var b = $('.processorBox li .current').index();
+				var b = $('.processorBox li.current').index();
 				var i = $(this).index();
 				if (i < b) {
 					$('.processorBox li').removeClass('current').eq(i).addClass('current');
