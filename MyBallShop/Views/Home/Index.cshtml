@@ -1,6 +1,9 @@
 ﻿@{
 	Layout = null;
 }
+@{
+	var account = ViewBag.Account ?? "登录";
+}
 
 <head>
 	<meta charset="UTF-8">
@@ -24,7 +27,7 @@
 					</li>
 					<li>
 						<span class="line"></span>
-						<a href="/Home/Login">登录</a>
+						<a href="/Home/Login">@account</a>
 					</li>
 					@*<li>
 						<span class="line"></span>

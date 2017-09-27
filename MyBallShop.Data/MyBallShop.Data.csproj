@@ -155,12 +155,19 @@
     <Compile Include="Migrations\201709260450091_test.Designer.cs">
       <DependentUpon>201709260450091_test.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709260853518_zhngb.cs" />
+    <Compile Include="Migrations\201709260853518_zhngb.Designer.cs">
+      <DependentUpon>201709260853518_zhngb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201709260450091_test.resx">
       <DependentUpon>201709260450091_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709260853518_zhngb.resx">
+      <DependentUpon>201709260853518_zhngb.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

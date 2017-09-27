@@ -21,6 +21,7 @@ namespace MyBallShop.Mapping
 			this.Property(p => p.PASSWORD).IsRequired().HasColumnType("VARCHAR");
 			this.Property(p => p.PHONENUMBER).HasColumnType("VARCHAR");
 			this.Property(p => p.ADDRESS).HasColumnType("NVARCHAR");
+			this.Property(p => p.NAME).HasColumnType("NVARCHAR");
 
 			this.Property(p => p.CREATEUSERID).HasMaxLength(64).HasColumnType("VARCHAR");
 			this.Property(p => p.CREATETIME).HasColumnType("datetime");

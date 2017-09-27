@@ -10,43 +10,93 @@ using System.Web.Mvc;
 
 namespace MyBallShop.Controllers
 {
-    public class CreateAcountMsgController : Controller
-    {
-        // GET: CreateAcountMsg
-        public ActionResult CreateAcount()
-        {
-            return View();
-        }
-
-		[HttpPost]
-		public string  CreateAccount(DTO_Account model)
+	public class CreateAcountMsgController : Controller
+	{
+		// GET: CreateAcountMsg
+		public ActionResult CreateAcount()
 		{
-				if (model.GUID == null)
-				{
-					model.GUID = Guid.NewGuid().ToString();
-				}
-				AccountServers _accountServers = new AccountServers();
-				var flg = _accountServers.NewAccount(model);
-			if (flg == "ok") {
-				return $"{model.GUID}&{model.EMAILID}";
-			}
-			return "error";
+			return View();
 		}
 
 		[HttpPost]
-		public string UpdateAccount(DTO_Account model)
+		public async Task<ActionResult> CreateAccount(DTO_Account model)
 		{
 			if (model.GUID == null)
 			{
 				model.GUID = Guid.NewGuid().ToString();
 			}
-			AccountServers _accountServers = new AccountServers();
-			var flg = _accountServers.UpdateAccount(model);
+		    var flg = await new AccountServers().NewAccount(model);
 			if (flg == "ok")
 			{
-				return "ok";
+				return Json(model, JsonRequestBehavior.AllowGet);
 			}
-			return "error";
+			return Content("error");
+		}
+
+		[HttpPost]
+		public ActionResult UpdateAccount(DTO_Account model)
+		{
+			if (model.GUID == null)
+			{
+				model.GUID = Guid.NewGuid().ToString();
+			}
+			var flg =  new AccountServers().UpdateAccount(model);
+			if (flg == "ok")
+			{
+				return Json(model, JsonRequestBehavior.AllowGet);
+			}
+			return Json(new DTO_Account(), JsonRequestBehavior.AllowGet);
+		}
+
+		[HttpPost]
+		public ActionResult LoginCheck(DTO_Account model)
+		{
+			AccountServers a = new AccountServers();
+			var flg = a.GetAllAccountInfo(model);
+
+			if (flg == "ok") {
+				var msg = new returnMsg()
+				{
+					EMAILID = model.EMAILID,
+					NAME = model.NAME,
+					GUID = model.GUID,
+					STATUSMSG = "登录成功",
+				};
+
+				return Json(msg, JsonRequestBehavior.AllowGet);
+			}
+			return Json(new returnMsg { STATUSMSG= flg }, JsonRequestBehavior.AllowGet);
+		}
+
+		public class returnMsg {
+			/// <summary>
+			/// GUID
+			/// </summary>
+			public String GUID { get; set; }
+			/// <summary>
+			/// EMAILID
+			/// </summary>
+			public String EMAILID { get; set; }
+			/// <summary>
+			/// PASSWORD
+			/// </summary>
+			public String PASSWORD { get; set; }
+			/// <summary>
+			/// PHONENUMBER
+			/// </summary>
+			public String PHONENUMBER { get; set; }
+			/// <summary>
+			/// NAME
+			/// </summary>
+			public String NAME { get; set; }
+			/// <summary>
+			/// ADDRESS
+			/// </summary>
+			public String ADDRESS { get; set; }
+			/// <summary>
+			/// STATUSMSG
+			/// </summary>
+			public String STATUSMSG { get; set; }
 		}
 	}
 }

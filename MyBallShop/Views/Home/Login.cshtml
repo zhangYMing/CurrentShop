@@ -48,6 +48,23 @@
 	<script src="~/Scripts/login/supersized.3.2.7.min.js"></script>
 	<script src="~/Scripts/login/supersized-init.js"></script>
 	<script>
+		//显示提示框，目前三个参数(txt：要显示的文本；time：自动关闭的时间（不设置的话默认1500毫秒）；status：默认0为错误提示，1为正确提示；)
+		function showTips(txt, time, status) {
+			var htmlCon = '';
+			if (txt != '') {
+				if (status != 0 && status != undefined) {
+					htmlCon = '<div class="tipsBox" style="width:220px;padding:10px;background-color:#4AAF33;border-radius:4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;color:#fff;box-shadow:0 0 3px #ddd inset;-webkit-box-shadow: 0 0 3px #ddd inset;text-align:center;position:fixed;top:25%;left:50%;z-index:999999;margin-left:-120px;"><img src="" style="vertical-align: middle;margin-right:5px;"/>' + txt + '</div>';
+				} else {
+					htmlCon = '<div class="tipsBox" style="width:220px;padding:10px;background-color:#D84C31;border-radius:4px;-webkit-border-radius: 4px;-moz-border-radius: 4px;color:#fff;box-shadow:0 0 3px #ddd inset;-webkit-box-shadow: 0 0 3px #ddd inset;text-align:center;position:fixed;top:25%;left:50%;z-index:999999;margin-left:-120px;"><img src="" style="vertical-align: middle;margin-right:5px;"/>' + txt + '</div>';
+				}
+				$('body').prepend(htmlCon);
+				if (time == '' || time == undefined) {
+					time = 1500;
+				}
+				setTimeout(function () { $('.tipsBox').remove(); }, time);
+			}
+		}
+
 		$(".btn").click(function () {
 			is_hide();
 		})
@@ -55,6 +72,7 @@
 		var p = $("input[name=password]");
 
 		$("#submit").click(function () {
+			debugger
 			if (u.val() == '' || p.val() == '') {
 				$("#ts").html("用户名或密码不能为空~");
 				is_show();
@@ -66,9 +84,21 @@
 					$("#ts").html("用户名错误");
 					is_show();
 					return false;
+				} else {
+					var obj = new Object();
+					obj["EMAILID"] = u.val();
+					obj["PASSWORD"] = p.val();
+					$.post("../CreateAcountMsg/LoginCheck", { model: obj }, function (data) {
+						if (data["STATUSMSG"] == "登录成功") {
+							showTips('登录成功', 2500, 1);
+							//$.post("../Home/Index", { data: data });
+							setTimeout(window.location.href = "Index?id=" + data["EMAILID"]);
+						} else {
+							showTips(data["STATUSMSG"]);
+						}
+					});
 				}
-				window.location.href = "Index";
-			}
+			};
 		});
 
 		window.onload = function () {

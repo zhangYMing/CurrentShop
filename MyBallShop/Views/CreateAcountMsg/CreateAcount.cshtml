@@ -1,7 +1,6 @@
 ﻿@{
 	Layout = null;
 }
-
 <style>
 	.frm_controls .add {
 		width:130px;
@@ -198,8 +197,8 @@
 							showTips('登陆失败......');
 						} else {
 							showTips('提交成功', 2500, 1);
-							$("#emailTwo").text(data.split('&')[1]);
-							$("#mguid").val(data.split('&')[0]);
+							$("#emailTwo").text(data["EMAILID"]);
+							$("#mguid").val(data["GUID"]);
 							$('.processorBox li').removeClass('current').eq(1).addClass('current');
 							$('.step').fadeOut(300).eq(1).fadeIn(500);
 						}
@@ -223,13 +222,13 @@
 				var addr = $("select[name='province']").find("option:selected").val() + $("select[name='city']").find("option:selected").val() +
 				$("select[name='area']").find("option:selected").val() + $("input.addr").val();
 				var OBJ = new Object();
-				obj["GUID"] = guid;
-				obj["EMAILID"] = email;
-				obj["PHONENUMBER"] = phone;
-				obj["ADDRESS"] = addr;
-				obj["NAME"] = name;
+				OBJ["GUID"] = guid;
+				OBJ["EMAILID"] = email;
+				OBJ["PHONENUMBER"] = phone;
+				OBJ["ADDRESS"] = addr;
+				OBJ["NAME"] = name;
 				$.post("../CreateAcountMsg/UpdateAccount", { model: OBJ }, function (data) {
-					//
+					if (data != null) { showTips('提交成功', 2500, 1); location.href = "../Home/Index?id=" + data["EMAILID"]}
 				})
 			   });
 

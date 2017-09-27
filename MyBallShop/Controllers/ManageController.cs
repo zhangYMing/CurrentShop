@@ -7,6 +7,8 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using MyBallShop.Models;
+using MyBallShop.Model.Model;
+using MyballShop.Servers.Service;
 
 namespace MyBallShop.Controllers
 {
@@ -38,7 +40,7 @@ namespace MyBallShop.Controllers
             }
         }
 
-        public ApplicationUserManager UserManager
+		public ApplicationUserManager UserManager
         {
             get
             {
