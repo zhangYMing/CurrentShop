@@ -6,74 +6,36 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<!-- For IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<!-- For Resposive Device -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>Home</title>
-
-	<!-- Main style sheet -->
 	<link rel="stylesheet" type="text/css" href="~/Content/style.css">
-	<!-- responsive style sheet -->
 	<link rel="stylesheet" type="text/css" href="~/Content/responsive.css">
-
 	<link rel="stylesheet" type="text/css" href="~/Content/example.css">
-
-
-	<!-- Fix Internet Explorer ______________________________________-->
-	<!--[if lt IE 9]>
-		<script src="http://www.jq22.com/jquery/html5.min.js"></script>
-		<script src="vendor/html5shiv.js"></script>
-		<script src="vendor/respond.js"></script>
-	<![endif]-->
-
+	<link rel="stylesheet" type="text/css" href="~/vendor/bootstrap/bootstrap.css">
 </head>
 
 <body class="seo-theme">
 	<div class="main-page-wrapper">
-
-		<!-- ===================================================
-			Loading Transition
-		==================================================== -->
 		<div id="loader-wrapper">
 			<div id="loader"></div>
 		</div>
-
-
-		<!--
-		=============================================
-			Theme Header
-		==============================================
-		-->
 		<header class="seo-header">
 			<div class="top-header">
 				<div class="container">
-					@*<div class="float-left left-side">
-							<ul>
-								<li>Follow Us</li>
-								<li><a href="" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="" class="tran3s round-border"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-								<li><a href="" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								<li><a href="" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-								<li><a href="" class="tran3s round-border"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-							</ul>
-						</div>*@
 					<div class="float-right right-side">
 						<ul>
 							<li><a href="#" class="tran3s"><i class="flaticon-envelope"></i> companymail@gamil.com</a></li>
 							<li><a href="#" class="tran3s"><i class="flaticon-phone"></i> 0 (855) 233-5385</a></li>
 						</ul>
-					</div> <!-- /.right-side -->
-				</div> <!-- /.container -->
-			</div> <!-- /.top-header -->
-			<!-- ============================ Theme Menu ========================= -->
+					</div>
+				</div>
+			</div>
 			<div class="theme-main-menu">
 				<div class="container">
 					<div class="main-container clearfix">
-						<div class="logo float-left"><a href="~/Home/Index"><img src="~/images/logo/logo4.png" alt="Logo"></a></div>
-
+					　　　@*公司logo表示位置*@
+						<div class="logo float-left"><a href="~/Home/Index"><img src="" alt="Logo"></a></div>
 						<div class="right-content float-right">
 							<button class="search round-border tran3s" id="search-button"><i class="flaticon-search"></i></button>
 							<a href="#" class="button-four">Free SEO ANALYZE</a>
@@ -86,9 +48,8 @@
 										<button class="se-p-bg-color"><i class="flaticon-search"></i></button>
 									</form>
 								</div>
-							</div> <!-- /.search-box -->
-						</div> <!-- /.right-content -->
-						<!-- ============== Menu Warpper ================ -->
+							</div>
+						</div>
 						<div class="menu-wrapper float-right">
 							<nav id="mega-menu-holder" class="clearfix">
 								<ul class="clearfix">
@@ -98,29 +59,19 @@
 									<li><a href="~/Home/About">会社情報</a></li>
 									<li><a href="~/Home/Contact">お問い合わせ</a></li>
 								</ul>
-							</nav> <!-- /#mega-menu-holder -->
-						</div> <!-- /.menu-wrapper -->
-					</div> <!-- /.main-container -->
-				</div> <!-- /.container -->
-			</div> <!-- /.theme-main-menu -->
-		</header> <!-- /.seo-header -->
-		<!--
-		=============================================
-			Theme Main Banner
-		==============================================
-		-->
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
 		<div id="banner">
 			<div class="rev_slider_wrapper">
-				<!-- START REVOLUTION SLIDER 5.0.7 auto mode -->
 				<div id="seo-main-banner" class="rev_slider" data-version="5.0.7">
 					<ul>
-						<!-- SLIDE1  -->
 						<li data-index="rs-280" data-transition="zoomout" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0" data-saveperformance="off" data-title="01" data-description="">
-							<!-- MAIN IMAGE -->
 							<img src="~/images/home/slide-7.jpg" alt="image" class="rev-slidebg" data-bgparallax="3" data-bgposition="center center" data-duration="20000" data-ease="Linear.easeNone" data-kenburns="on" data-no-retina="" data-offsetend="0 0" data-offsetstart="0 0" data-rotateend="0" data-rotatestart="0" data-scaleend="100" data-scalestart="140">
-							<!-- LAYERS -->
-							<!-- LAYER NR. 1 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['0','0','15','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']"
@@ -139,7 +90,6 @@
 								 style="z-index: 6;">
 								<h1>最高品質の<br><span class="se-s-color">製品</span> を提供する。</h1>
 							</div>
-							<!-- LAYER NR. 2 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['0','0','15','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['10','10','10','0']"
@@ -157,7 +107,6 @@
 								 style="z-index: 6;">
 								<p>ここでは、<br>あなたが望むすべての高品質な製品を見つけることができる。</p>
 							</div>
-							<!-- LAYER NR. 3 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['0','0','15','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['115','115','115','130']"
@@ -171,7 +120,6 @@
 								 data-responsive_offset="on">
 								<a href="~/Home/Service" class="service-button button-two">事業内容</a>
 							</div>
-							<!-- LAYER NR. 4 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['170','170','185','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['115','115','115','220']"
@@ -185,7 +133,6 @@
 								 data-responsive_offset="on">
 								<a href="~/Home/About" class="about-button button-two">会社情報</a>
 							</div>
-							<!-- LAYER NR. 5 -->
 							<div class="tp-caption rs-parallaxlevel-3"
 								 data-x="['right','right','right','right']" data-hoffset="['0','0','-60','0']"
 								 data-y="['middle','middle','bottom','middle']" data-voffset="['0','0','0','0']"
@@ -200,12 +147,8 @@
 								<img src="~/images/home/object.png" alt="image">
 							</div>
 						</li>
-						<!-- SLIDE2  -->
 						<li data-index="rs-18" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="~/images/home/slide-7.jpg" data-rotate="0" data-saveperformance="off" data-title="02" data-description="">
-							<!-- MAIN IMAGE -->
 							<img src="~/images/home/slide-7.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="30000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-							<!-- LAYERS -->
-							<!-- LAYER NR. 1 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['0','0','15','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']"
@@ -224,7 +167,6 @@
 								 style="z-index: 6;">
 								<h1>最高品質の<br><span class="se-s-color">製品</span> を提供する。</h1>
 							</div>
-							<!-- LAYER NR. 2 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['0','0','15','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['10','10','10','0']"
@@ -242,7 +184,6 @@
 								 style="z-index: 6;">
 								<p>ここでは、<br>あなたが望むすべての高品質な製品を見つけることができる。</p>
 							</div>
-							<!-- LAYER NR. 3 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['0','0','15','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['115','115','115','130']"
@@ -256,7 +197,6 @@
 								 data-responsive_offset="on">
 								<a href="~/Home/Service" class="service-button button-two">事業内容</a>
 							</div>
-							<!-- LAYER NR. 4 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['170','170','185','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['115','115','115','220']"
@@ -270,7 +210,6 @@
 								 data-responsive_offset="on">
 								<a href="~/Home/About" class="about-button button-two">会社情報</a>
 							</div>
-							<!-- LAYER NR. 5 -->
 							<div class="tp-caption rs-parallaxlevel-3"
 								 data-x="['right','right','right','right']" data-hoffset="['0','0','-60','0']"
 								 data-y="['middle','middle','bottom','middle']" data-voffset="['0','0','0','0']"
@@ -285,12 +224,8 @@
 								<img src="~/images/home/object.png" alt="image">
 							</div>
 						</li>
-						<!-- SLIDE3  -->
 						<li data-index="rs-20" data-transition="zoomin" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="~/images/home/slide-7.jpg" data-rotate="0" data-saveperformance="off" data-title="03" data-description="">
-							<!-- MAIN IMAGE -->
 							<img src="~/images/home/slide-7.jpg" alt="" data-bgposition="center center" data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 -500" data-offsetend="0 500" data-bgparallax="10" class="rev-slidebg" data-no-retina>
-							<!-- LAYERS -->
-							<!-- LAYER NR. 1 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['0','0','15','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['-120','-120','-120','-120']"
@@ -309,7 +244,6 @@
 								 style="z-index: 6;">
 								<h1>最高品質の<br><span class="se-s-color">製品</span> を提供する。</h1>
 							</div>
-							<!-- LAYER NR. 2 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['0','0','15','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['10','10','10','0']"
@@ -327,7 +261,6 @@
 								 style="z-index: 6;">
 								<p>ここでは、<br>あなたが望むすべての高品質な製品を見つけることができる。</p>
 							</div>
-							<!-- LAYER NR. 3 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['0','0','15','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['115','115','115','130']"
@@ -341,7 +274,6 @@
 								 data-responsive_offset="on">
 								<a href="~/Home/Service" class="service-button button-two">事業内容</a>
 							</div>
-							<!-- LAYER NR. 4 -->
 							<div class="tp-caption"
 								 data-x="['left','left','left','left']" data-hoffset="['170','170','185','5']"
 								 data-y="['middle','middle','middle','middle']" data-voffset="['115','115','115','220']"
@@ -355,7 +287,6 @@
 								 data-responsive_offset="on">
 								<a href="~/Home/About" class="about-button button-two">会社情報</a>
 							</div>
-							<!-- LAYER NR. 5 -->
 							<div class="tp-caption rs-parallaxlevel-3"
 								 data-x="['right','right','right','right']" data-hoffset="['0','0','-60','0']"
 								 data-y="['middle','middle','bottom','middle']" data-voffset="['0','0','0','0']"
@@ -372,24 +303,16 @@
 						</li>
 					</ul>
 				</div>
-			</div><!-- END REVOLUTION SLIDER -->
-		</div> <!--  /#banner -->
-		<!--
-		=============================================
-			Short Banner
-		==============================================
-		-->
+			</div>
+		</div>
+
 		@*<div class="short-banner se-p-bg-color m-bottom0">
 				<div class="container">
 					<h4 class="float-left">Don’s hasitate to <span class="se-s-color">contact with us</span> for any kind of SEO Service</h4>
 					<a href="~/Home/Contact" class="button-four float-right">お問い合わせ</a>
 				</div>
 			</div>*@
-		<!--
-		=============================================
-			SEO company Goal
-		==============================================
-		-->
+
 		@*<section class="company-goal">
 				<div class="container">
 					<h2 class="text-center">Number <span class="se-s-color">#1 SEO</span> service company <br>Over 10 years with proud!!</h2>
@@ -399,30 +322,26 @@
 								<div class="img-icon round-border"><img src="~/images/icon/2.png" alt="Icon" class="round-border"></div>
 								<h5>Search Optimization</h5>
 								<p>There are many variations Duis mass lacus suad id. sodales scelerisque have suffered alter ation in some form seeker</p>
-							</div> <!-- /.single-goal -->
-						</div> <!-- /.col- -->
+							</div>
+						</div>
 						<div class="col-md-4 col-xs-12">
 							<div class="single-goal text-center hvr-float-shadow wow fadeInUp" data-wow-delay="0.1s">
 								<div class="img-icon round-border"><img src="~/images/icon/3.png" alt="Icon" class="round-border"></div>
 								<h5>High-End Anaylizing</h5>
 								<p>There are many variations Duis mass lacus suad id. sodales scelerisque have suffered alter ation in some form seeker</p>
-							</div> <!-- /.single-goal -->
-						</div> <!-- /.col- -->
+							</div>
+						</div>
 						<div class="col-md-4 col-xs-12">
 							<div class="single-goal text-center hvr-float-shadow wow fadeInUp" data-wow-delay="0.2s">
 								<div class="img-icon round-border"><img src="~/images/icon/4.png" alt="Icon" class="round-border"></div>
 								<h5>Great Security</h5>
 								<p>There are many variations Duis mass lacus suad id. sodales scelerisque have suffered alter ation in some form seeker</p>
-							</div> <!-- /.single-goal -->
-						</div> <!-- /.col- -->
-					</div> <!-- /.row -->
-				</div> <!-- /.container -->
-			</section>*@ <!-- /.company-goal -->
-		<!--
-		=============================================
-			Welocome To SEO
-		==============================================
-		-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>*@
+
 		@*<div class="welcome-seo">
 				<div class="container">
 					<div class="wrapper">
@@ -454,25 +373,22 @@
 										<p>Certified by digital marketing </p>
 									</li>
 								</ul>
-							</div> <!-- /.col- -->
+							</div>
 							<div class="col-lg-6 col-md-5 col-xs-12"><img src="~/images/home/object2.png" alt="Image"></div>
-						</div> <!-- /.row -->
-					</div> <!-- /.wrapper -->
-				</div> <!-- /.container -->
-			</div>*@ <!-- /.welcome-seo -->
-		<!--
-		=============================================
-			Our Service
-		==============================================
-		-->
-		<div class="our-service" style="background-color:antiquewhite;">
-			<div class="container">
-				<div class="seo-title-one" style="margin-top:15px;">
-					<h2>事業内容</h2>
-					<h6>We have all type SEO &amp; Marketing of service for our customer</h6>
-					<a href="~/Home/Service" class="tran3s button-four se-s-bg-color">詳しく</a>
-				</div> <!-- /.seo-title-one -->
+						</div>
+					</div>
+				</div>
+			</div>*@
 
+		<div class="short-banner se-s-bg-color m-bottom0">
+			<div class="container">
+				<h3 class="float-left">事業内容</h3>
+				<a href="~/Home/Service" class="button-four float-right">詳しく</a>
+			</div>
+		</div>
+
+		<div class="our-service">
+			<div class="container">
 				<div class="row">
 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="single-service tran4s">
@@ -480,56 +396,227 @@
 							<h2>01</h2>
 							<h5><a href="~/Home/Service" class="tran4s">Google Analyzing</a></h5>
 							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
+						</div>
+					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12" data-wow-delay="0.1s">
 						<div class="single-service tran4s">
 							<img src="~/images/icon/6.png" alt="icon">
 							<h2>02</h2>
 							<h5><a href="~/Home/Service" class="tran4s">Content Research</a></h5>
 							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
+						</div>
+					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12" data-wow-delay="0.2s">
 						<div class="single-service tran4s">
 							<img src="~/images/icon/7.png" alt="icon">
 							<h2>03</h2>
 							<h5><a href="~/Home/Service" class="tran4s">Keyword Suggestion</a></h5>
 							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
+						</div>
+					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12" data-wow-delay="0.1s">
 						<div class="single-service tran4s">
 							<img src="~/images/icon/8.png" alt="icon">
 							<h2>04</h2>
 							<h5><a href="~/Home/Service" class="tran4s">link Optimization</a></h5>
 							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
+						</div>
+					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12" data-wow-delay="0.2s">
 						<div class="single-service tran4s">
 							<img src="~/images/icon/9.png" alt="icon">
 							<h2>05</h2>
 							<h5><a href="~/Home/Service" class="tran4s">SEO Optimization</a></h5>
 							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
+						</div>
+					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12" data-wow-delay="0.3s">
 						<div class="single-service tran4s">
 							<img src="~/images/icon/10.png" alt="icon">
 							<h2>06</h2>
 							<h5><a href="~/Home/Service" class="tran4s">Social Media Marketing</a></h5>
 							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
+						</div>
+					</div>
 				</div>
-			</div> <!-- /.container -->
-		</div> <!-- /.our-service -->
-		<!--
-		=============================================
-			SEO Counter
-		==============================================
-		-->
+			</div>
+		</div>
+
+		<div class="short-banner se-s-bg-color m-bottom0">
+			<div class="container">
+				<h3 class="float-left">詳しく商品情報</h3>
+				<a href="#" class="button-four float-right">お問い合わせ</a>
+			</div>
+		</div>
+
+		<div id="part3" class="part">
+			<div class="container">
+				@*<div class="seo-title-one">
+						<h2>商品一覧</h2>
+					</div>*@
+				<div id="item1" class="sHoverItem">
+					<img id="img1" src="~/ProductImages/1.jpg">
+					<span id="intro1" class="sIntro">
+						<a>Flowers</a>
+						<a>Flowers are so inconsistent! But I was too young to know how to love her</a>
+						<button>inconsistent</button>
+					</span>
+				</div>
+				<div id="item2" class="sHoverItem">
+					<img src="~/ProductImages/2.jpg">
+					<span class="sIntro">
+						<a>You know</a>
+						<a>one loves the sunset, when one is so sad</a>
+						<button>sunset</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/3.jpg">
+					<span class="sIntro">
+						<a>For</a>
+						<a>For she did not want him to see her crying. She was such a proud flower</a>
+						<button>crying</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/3.jpg">
+					<span class="sIntro">
+						<a>For</a>
+						<a>For she did not want him to see her crying. She was such a proud flower</a>
+						<button>crying</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/3.jpg">
+					<span class="sIntro">
+						<a>For</a>
+						<a>For she did not want him to see her crying. She was such a proud flower</a>
+						<button>crying</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/4.jpg">
+					<span class="sIntro">
+						<a>Volcanoes</a>
+						<a>It is of some use to my volcanoes, and it is of some use to my flower, that I own them. But you are of no </a>
+						<button>use to the stars</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/3.jpg">
+					<span class="sIntro">
+						<a>For</a>
+						<a>For she did not want him to see her crying. She was such a proud flower</a>
+						<button>crying</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/5.jpg">
+					<span class="sIntro">
+						<a>I thought</a>
+						<a>I thought that I was rich, with a flower that was unique in all the world; and all I had was a common</a>
+						<button>rose</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/3.jpg">
+					<span class="sIntro">
+						<a>For</a>
+						<a>For she did not want him to see her crying. She was such a proud flower</a>
+						<button>crying</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/6.jpg">
+					<span class="sIntro">
+						<a>For she</a>
+						<a>For she did not want him to see her crying. She was such a proud flower</a>
+						<button>a proud flower</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/7.jpg">
+					<span class="sIntro">
+						<a>Thorns</a>
+						<a>She has only four thorns to defend herself against the world. And I have left on my planet, all alone!</a>
+						<button>alone</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/8.jpg">
+					<span class="sIntro">
+						<a>A little boy</a>
+						<a>To me, you are still nothing more than a little boy who is just like a hundred thousand other little boys.</a>
+						<button>boys</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/9.jpg">
+					<span class="sIntro">
+						<a>And I</a>
+						<a>And I have no need of you. And you, on your part, have no need of me.</a>
+						<button>no need of me</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/10.jpg">
+					<span class="sIntro">
+						<a>Foxes</a>
+						<a>I am nothing more than a fox like a hundred thousand other foxes.</a>
+						<button>nothing</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/11.jpg">
+					<span class="sIntro">
+						<a>Tame</a>
+						<a>But if you tame me, then we shall need each other.</a>
+						<button>need</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/12.jpg">
+					<span class="sIntro">
+						<a>Unique</a>
+						<a>To me,you will be unique in all the world. To you, I shall be unique in all the world. </a>
+						<button>unique</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/12.jpg">
+					<span class="sIntro">
+						<a>Unique</a>
+						<a>To me,you will be unique in all the world. To you, I shall be unique in all the world. </a>
+						<button>unique</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/12.jpg">
+					<span class="sIntro">
+						<a>Unique</a>
+						<a>To me,you will be unique in all the world. To you, I shall be unique in all the world. </a>
+						<button>unique</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/12.jpg">
+					<span class="sIntro">
+						<a>Unique</a>
+						<a>To me,you will be unique in all the world. To you, I shall be unique in all the world. </a>
+						<button>unique</button>
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/12.jpg">
+					<span class="sIntro">
+						<a>Unique</a>
+						<a>To me,you will be unique in all the world. To you, I shall be unique in all the world. </a>
+						<button>unique</button>
+					</span>
+				</div>
+			</div>
+		</div>
+
 		<div class="seo-counter">
 			<div class="main-content">
 				<img src="~/images/home/object3.png" alt="Image">
@@ -539,35 +626,30 @@
 							<div class="single-box">
 								<h2 class="number"><span class="timer" data-from="0" data-to="84" data-speed="1000" data-refresh-interval="5">0</span></h2>
 								<p>Satisfied Client</p>
-							</div> <!-- /.single-box -->
+							</div>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 							<div class="single-box">
 								<h2 class="number"><span class="timer" data-from="0" data-to="248" data-speed="1000" data-refresh-interval="5">0</span></h2>
 								<p>Completed projects</p>
-							</div> <!-- /.single-box -->
+							</div>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 							<div class="single-box">
 								<h2 class="number"><span class="timer" data-from="0" data-to="86" data-speed="1000" data-refresh-interval="5">0</span></h2>
 								<p>Cup of Coffe</p>
-							</div> <!-- /.single-box -->
+							</div>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 							<div class="single-box border-fix">
 								<h2 class="number"><span class="timer" data-from="0" data-to="12" data-speed="1000" data-refresh-interval="5">0</span>+</h2>
 								<p>Years Expereince</p>
-							</div> <!-- /.single-box -->
+							</div>
 						</div>
-					</div> <!-- /.row -->
-				</div> <!-- /.container -->
-			</div> <!-- /.main-content -->
-		</div> <!-- /.seo-counter -->
-		<!--
-		=============================================
-			pricing Plan
-		==============================================
-		-->
+					</div>
+				</div>
+			</div>
+		</div>
 		@*<div class="pricing-plan">
 				<div class="container">
 					<div class="seo-title-one text-center">
@@ -627,17 +709,13 @@
 					</div> <!-- /.clearfix -->
 				</div> <!-- /.container -->
 			</div>*@ <!-- /.pricing-plan -->
-		<!--
-		=============================================
-			Our Project
-		==============================================
-		-->
+
 		<div class="our-project">
 			<div class="container">
 				<div class="seo-title-one text-center">
 					<h2>Recent Projects</h2>
 					<h6>Other technological advances made during the Paleolithic era were clothing</h6>
-				</div> <!-- /.business-title-one -->
+				</div>
 
 				<ul class="mixitUp-menu text-center">
 					<li class="filter active tran3s" data-filter="all">SEO Optimization</li>
@@ -646,8 +724,7 @@
 					<li class="filter tran3s" data-filter=".makre">Marketing</li>
 					<li class="filter tran3s" data-filter=".google">Google Analyize</li>
 				</ul>
-			</div> <!-- /.container -->
-
+			</div>
 
 			<div class="row" id="mixitUp-item">
 				<div class="mix keyword google">
@@ -659,9 +736,9 @@
 								<h5>Business &amp; Finance</h5>
 								<a href="#" class="tran3s round-border">+</a>
 							</div>
-						</div> <!-- /.hover -->
-					</div> <!-- /.single-project -->
-				</div> <!-- /.mix -->
+						</div>
+					</div>
+				</div>
 				<div class="mix buil makre">
 					<div class="single-project color2">
 						<img src="~/images/project/34.jpg" alt="Image" class="tran4s">
@@ -671,9 +748,9 @@
 								<h5>Business &amp; Finance</h5>
 								<a href="#" class="tran3s round-border">+</a>
 							</div>
-						</div> <!-- /.hover -->
-					</div> <!-- /.single-project -->
-				</div> <!-- /.mix -->
+						</div>
+					</div>
+				</div>
 				<div class="mix keyword makre google">
 					<div class="single-project color3">
 						<img src="~/images/project/35.jpg" alt="Image" class="tran4s">
@@ -683,9 +760,9 @@
 								<h5>Business &amp; Finance</h5>
 								<a href="#" class="tran3s round-border">+</a>
 							</div>
-						</div> <!-- /.hover -->
-					</div> <!-- /.single-project -->
-				</div> <!-- /.mix -->
+						</div>
+					</div>
+				</div>
 				<div class="mix buil keyword google">
 					<div class="single-project color4">
 						<img src="~/images/project/36.jpg" alt="Image" class="tran4s">
@@ -695,9 +772,9 @@
 								<h5>Business &amp; Finance</h5>
 								<a href="#" class="tran3s round-border">+</a>
 							</div>
-						</div> <!-- /.hover -->
-					</div> <!-- /.single-project -->
-				</div> <!-- /.mix -->
+						</div>
+					</div>
+				</div>
 				<div class="mix buil makre">
 					<div class="single-project color5">
 						<img src="~/images/project/37.jpg" alt="Image" class="tran4s">
@@ -707,207 +784,85 @@
 								<h5>Business &amp; Finance</h5>
 								<a href="#" class="tran3s round-border">+</a>
 							</div>
-						</div> <!-- /.hover -->
-					</div> <!-- /.single-project -->
-				</div> <!-- /.mix -->
-			</div> <!-- /.row -->
-		</div> <!-- /.our-project -->
-		<!--
-		=============================================
-			Short Banner
-		==============================================
-		-->
-		<div class="short-banner se-p-bg-color m-bottom0">
-			<div class="container">
-				@*<h4 class="float-left">We are complete more than <span class="se-s-color">1200+ Project</span> succsessfully</h4>*@
-				<a href="#" class="button-four float-right">お問い合わせ</a>
-			</div> <!-- /.container -->
-		</div> <!-- /.short-banner -->
-		<!--
-		=============================================
-			Client slider
-		==============================================
-		-->
-		@*<div class="client-slider">
-			<div class="container">
-				<h2 class="text-center">What Our Customers Are Saying</h2>
-
-				<div class="sldier-wrapper">
-					<div class="seo-client-slider">
-						<div class="item">
-							<div class="clearfix">
-								<img src="~/images/home/9.jpg" alt="Image" class="float-left round-border">
-								<div class="text float-left">
-									<h5>James Dula</h5>
-									<span>Founder of  CharityPro</span>
-									<p>Looking cautiously round, ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
-								</div>
-							</div> <!-- /.clearfix -->
-						</div> <!-- /.item -->
-						<div class="item">
-							<div class="clearfix">
-								<img src="~/images/home/9.jpg" alt="Image" class="float-left round-border">
-								<div class="text float-left">
-									<h5>Rashed ka.</h5>
-									<span>Founder of  CharityPro</span>
-									<p>Looking cautiously round, ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
-								</div>
-							</div> <!-- /.clearfix -->
-						</div> <!-- /.item -->
-						<div class="item">
-							<div class="clearfix">
-								<img src="~/images/home/9.jpg" alt="Image" class="float-left round-border">
-								<div class="text float-left">
-									<h5>James Dula</h5>
-									<span>Founder of  CharityPro</span>
-									<p>Looking cautiously round, ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
-								</div>
-							</div> <!-- /.clearfix -->
-						</div> <!-- /.item -->
-						<div class="item">
-							<div class="clearfix">
-								<img src="~/images/home/9.jpg" alt="Image" class="float-left round-border">
-								<div class="text float-left">
-									<h5>James Dula</h5>
-									<span>Founder of  CharityPro</span>
-									<p>Looking cautiously round, ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
-								</div>
-							</div> <!-- /.clearfix -->
-						</div> <!-- /.item -->
-						<div class="item">
-							<div class="clearfix">
-								<img src="~/images/home/9.jpg" alt="Image" class="float-left round-border">
-								<div class="text float-left">
-									<h5>Rashed ka.</h5>
-									<span>Founder of  CharityPro</span>
-									<p>Looking cautiously round, ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
-								</div>
-							</div> <!-- /.clearfix -->
-						</div> <!-- /.item -->
-					</div> <!-- /.seo-client-slider -->
-				</div> <!-- /.sldier-wrapper -->
-			</div> <!-- /.container -->
-		</div>*@ 
-		<div id="part3" class="part">
-			<div class="container">
-				<div class="seo-title-one">
-					<h2>商品一覧</h2>
-				</div> <!-- /.seo-title-one -->
-				<div id="item1" class="sHoverItem">
-					<img id="img1" src="~/ProductImages/1.jpg">
-					<span id="intro1" class="sIntro">
-						<a>Flowers</a>
-						<a>Flowers are so inconsistent! But I was too young to know how to love her</a>
-						<button>inconsistent</button>
-					</span>
+						</div>
+					</div>
 				</div>
-				<div id="item2" class="sHoverItem">
-					<img src="~/ProductImages/2.jpg">
-					<span class="sIntro">
-						<h2>You know</h2>
-						<p>one loves the sunset, when one is so sad</p>
-						<button>sunset</button>
-					</span>
-				</div>
-				<div class="sHoverItem">
-					<img src="~/ProductImages/3.jpg">
-					<span class="sIntro">
-						<h2>For</h2>
-						<p>For she did not want him to see her crying. She was such a proud flower</p>
-						<button>crying</button>
-					</span>
-				</div>
-				<div class="sHoverItem">
-					<img src="~/ProductImages/4.jpg">
-					<span class="sIntro">
-						<h2>Volcanoes</h2>
-						<p>It is of some use to my volcanoes, and it is of some use to my flower, that I own them. But you are of no </p>
-						<button>use to the stars</button>
-					</span>
-				</div>
-				<div class="sHoverItem">
-					<img src="~/ProductImages/5.jpg">
-					<span class="sIntro">
-						<h2>I thought</h2>
-						<p>I thought that I was rich, with a flower that was unique in all the world; and all I had was a common</p>
-						<button>rose</button>
-					</span>
-				</div>
-				<div class="sHoverItem">
-					<img src="~/ProductImages/6.jpg">
-					<span class="sIntro">
-						<h2>For she</h2>
-						<p>For she did not want him to see her crying. She was such a proud flower</p>
-						<button>a proud flower</button>
-					</span>
-				</div>
-				<div class="sHoverItem">
-					<img src="~/ProductImages/7.jpg">
-					<span class="sIntro">
-						<h2>Thorns</h2>
-						<p>She has only four thorns to defend herself against the world. And I have left on my planet, all alone!</p>
-						<button>alone</button>
-					</span>
-				</div>
-				<div class="sHoverItem">
-					<img src="~/ProductImages/8.jpg">
-					<span class="sIntro">
-						<h2>A little boy</h2>
-						<p>To me, you are still nothing more than a little boy who is just like a hundred thousand other little boys.</p>
-						<button>boys</button>
-					</span>
-				</div>
-				<div class="sHoverItem">
-					<img src="~/ProductImages/9.jpg">
-					<span class="sIntro">
-						<h2>And I</h2>
-						<p>And I have no need of you. And you, on your part, have no need of me.</p>
-						<button>no need of me</button>
-					</span>
-				</div>
-				<div class="sHoverItem">
-					<img src="~/ProductImages/10.jpg">
-					<span class="sIntro">
-						<h2>Foxes</h2>
-						<p>I am nothing more than a fox like a hundred thousand other foxes.</p>
-						<button>nothing</button>
-					</span>
-				</div>
-				<div class="sHoverItem">
-					<img src="~/ProductImages/11.jpg">
-					<span class="sIntro">
-						<h2>Tame</h2>
-						<p>But if you tame me, then we shall need each other.</p>
-						<button>need</button>
-					</span>
-				</div>
-				<div class="sHoverItem">
-					<img src="~/ProductImages/12.jpg">
-					<span class="sIntro">
-						<h2>Unique</h2>
-						<p>To me,you will be unique in all the world. To you, I shall be unique in all the world. </p>
-						<button>unique</button>
-					</span>
-				</div>
-			</div><!-- /container -->
+			</div>
 		</div>
-		<!--
-		=============================================
-			latest Blog
-		==============================================
-		-->
-		<div class="latest-blog">
+
+		@*<div class="client-slider">
+				<div class="container">
+					<h2 class="text-center">What Our Customers Are Saying</h2>
+
+					<div class="sldier-wrapper">
+						<div class="seo-client-slider">
+							<div class="item">
+								<div class="clearfix">
+									<img src="~/images/home/9.jpg" alt="Image" class="float-left round-border">
+									<div class="text float-left">
+										<h5>James Dula</h5>
+										<span>Founder of  CharityPro</span>
+										<p>Looking cautiously round, ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
+									</div>
+								</div> <!-- /.clearfix -->
+							</div> <!-- /.item -->
+							<div class="item">
+								<div class="clearfix">
+									<img src="~/images/home/9.jpg" alt="Image" class="float-left round-border">
+									<div class="text float-left">
+										<h5>Rashed ka.</h5>
+										<span>Founder of  CharityPro</span>
+										<p>Looking cautiously round, ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
+									</div>
+								</div> <!-- /.clearfix -->
+							</div> <!-- /.item -->
+							<div class="item">
+								<div class="clearfix">
+									<img src="~/images/home/9.jpg" alt="Image" class="float-left round-border">
+									<div class="text float-left">
+										<h5>James Dula</h5>
+										<span>Founder of  CharityPro</span>
+										<p>Looking cautiously round, ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
+									</div>
+								</div> <!-- /.clearfix -->
+							</div> <!-- /.item -->
+							<div class="item">
+								<div class="clearfix">
+									<img src="~/images/home/9.jpg" alt="Image" class="float-left round-border">
+									<div class="text float-left">
+										<h5>James Dula</h5>
+										<span>Founder of  CharityPro</span>
+										<p>Looking cautiously round, ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
+									</div>
+								</div> <!-- /.clearfix -->
+							</div> <!-- /.item -->
+							<div class="item">
+								<div class="clearfix">
+									<img src="~/images/home/9.jpg" alt="Image" class="float-left round-border">
+									<div class="text float-left">
+										<h5>Rashed ka.</h5>
+										<span>Founder of  CharityPro</span>
+										<p>Looking cautiously round, ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.</p>
+									</div>
+								</div> <!-- /.clearfix -->
+							</div> <!-- /.item -->
+						</div> <!-- /.seo-client-slider -->
+					</div> <!-- /.sldier-wrapper -->
+				</div> <!-- /.container -->
+			</div>*@
+
+		@*<div class="latest-blog">
 			<div class="container">
 				<div class="seo-title-one">
 					<h2>ニュース</h2>
-				</div> <!-- /.seo-title-one -->
+				</div>
 
 				<div class="grid-blog-wrapper clearfix">
 					<div class="single-blog">
 						<div class="img-holder">
 							<img src="~/images/blog/43.jpg" alt="Image">
 							<span class="tag color1">NATURE</span>
-						</div> <!-- /.image-holder -->
+						</div>
 						<div class="post">
 							<h5><a href="#" class="tran3s">Robot’s Penguin Disguise Keeps Birds </a></h5>
 							<p>Looking cautiously rountain that they overheard, hag cowered ie nearer to the fire...</p>
@@ -917,13 +872,13 @@
 									<li><a href="" class="tran3s"><i class="tran3s fa fa-heart" aria-hidden="true"></i> 54</a></li>
 								</ul>
 							</div>
-						</div> <!-- /.post -->
+						</div>
 					</div>
 					<div class="single-blog">
 						<div class="img-holder">
 							<img src="~/images/blog/44.jpg" alt="Image">
 							<span class="tag color2">NATURE</span>
-						</div> <!-- /.image-holder -->
+						</div>
 						<div class="post">
 							<h5><a href="#" class="tran3s">Robot’s Penguin Disguise Keeps Birds </a></h5>
 							<p>Looking cautiously rountain that they overheard, hag cowered ie nearer to the fire...</p>
@@ -933,13 +888,13 @@
 									<li><a href="" class="tran3s"><i class="tran3s fa fa-heart" aria-hidden="true"></i> 54</a></li>
 								</ul>
 							</div>
-						</div> <!-- /.post -->
+						</div>
 					</div>
 					<div class="single-blog hidden-sm">
 						<div class="img-holder">
 							<img src="~/images/blog/45.jpg" alt="Image">
 							<span class="tag color3">NATURE</span>
-						</div> <!-- /.image-holder -->
+						</div> 
 						<div class="post">
 							<h5><a href="#" class="tran3s">Robot’s Penguin Disguise Keeps Birds </a></h5>
 							<p>Looking cautiously rountain that they overheard, hag cowered ie nearer to the fire...</p>
@@ -949,152 +904,107 @@
 									<li><a href="" class="tran3s"><i class="tran3s fa fa-heart" aria-hidden="true"></i> 54</a></li>
 								</ul>
 							</div>
-						</div> <!-- /.post -->
-					</div>
-				</div>
-			</div> <!-- /.container -->
-		@*</div>*@
-		<!--
-		=============================================
-			Partner Logo
-		==============================================
-		-->
-		@*<div class="partners-section">
-				<div class="container">
-					<div class="row">
-						<div id="partner-logo">
-							<div class="item"><img src="~/images/logo/p9.png" alt="logo"></div>
-							<div class="item"><img src="~/images/logo/p10.png" alt="logo"></div>
-							<div class="item"><img src="~/images/logo/p11.png" alt="logo"></div>
-							<div class="item"><img src="~/images/logo/p12.png" alt="logo"></div>
-							<div class="item"><img src="~/images/logo/p10.png" alt="logo"></div>
 						</div>
 					</div>
 				</div>
 			</div>*@
 
+			@*<div class="partners-section">
+					<div class="container">
+						<div class="row">
+							<div id="partner-logo">
+								<div class="item"><img src="~/images/logo/p9.png" alt="logo"></div>
+								<div class="item"><img src="~/images/logo/p10.png" alt="logo"></div>
+								<div class="item"><img src="~/images/logo/p11.png" alt="logo"></div>
+								<div class="item"><img src="~/images/logo/p12.png" alt="logo"></div>
+								<div class="item"><img src="~/images/logo/p10.png" alt="logo"></div>
+							</div>
+						</div>
+					</div>
+				</div>*@
 
-		<!--
-		=============================================
-			Bottom Footer Banner
-		==============================================
-		-->
-		<div class="bottom-footer-banner se-s-bg-color">
-			<div class="container">
-				@*<h3 class="float-left">Let’s talk about your mext project.</h3>*@
-				<a href="~/Home/Contact" class="float-right button-five">お問い合わせ</a>
-			</div>
-		</div>
-
-
-		<!--
-		=============================================
-			Footer
-		==============================================
-		-->
-		<footer class="default-footer seo-footer">
-			<div class="container">
-				<div class="top-footer row">
-					<div class="col-md-3 col-sm-5 footer-logo">
-						<a href="~/Home/Index"><img src="~/images/logo/logo3.png" alt="Logo"></a>
-						<p>Lorem ipsum dolor  amet natum latine copiosa at quo, suas labore saperet  has there any quote for write lorem percit latineu suas dummy.</p>
-					</div> <!-- /.footer-logo -->
-
-					<div class="col-md-2 col-sm-3 footer-list">
-						<h6>Information</h6>
-						<ul>
-							<li><a href="~/Home/About" class="tran3s">会社情報</a></li>
-							<li><a href="~/Home/Service" class="tran3s">事業内容</a></li>
-							<li><a href="~/Home/Contact" class="tran3s">お問い合わせ</a></li>
-						</ul>
-					</div> <!-- /.footer-list -->
-					<div class="col-md-3 col-sm-4 footer-latest-news">
-						<h6>Latest News</h6>
-						<div class="single-news">
-							<h5><a href="#" class="tran3s">How can be successfull in market place..</a></h5>
-							<span>13 Feb, 2017  /  Business</span>
-						</div> <!-- /.single-news -->
-						<div class="single-news">
-							<h5><a href="#" class="tran3s">How can be successfull in market place..</a></h5>
-							<span>13 Feb, 2017  /  Business</span>
-						</div> <!-- /.single-news -->
-					</div> <!-- /.footer-latest-news -->
-
-					<div class="col-md-4 col-xs-12 footer-subscribe">
-						<h6>Subscribe Us</h6>
-						<p>This sounded a very good reason, and Alice was quite pleased to know it.</p>
-						<form action="#">
-							<input type="text" placeholder="Enter your e-mail">
-							<button class="tran3s se-s-bg-color"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-						</form>
-					</div> <!-- /.footer-subscribe -->
-				</div> <!-- /.top-footer -->
-			</div> <!-- /.container -->
-
-			<div class="bottom-footer">
+			<div class="bottom-footer-banner se-s-bg-color">
 				<div class="container">
-					<div class="wrapper clearfix">
-						<p class="float-left">Copyright &copy; 2017.Company name All rights reserved.</p>
-						<ul class="float-right">
-							<li><a href="" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s round-border"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s round-border"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-						</ul>
-					</div> <!-- /.wrapper -->
-				</div> <!-- /.container -->
-			</div> <!-- /.bottom-footer -->
-		</footer>
+					@*<h3 class="float-left">Let’s talk about your mext project.</h3>*@
+					<a href="~/Home/Contact" class="float-right button-five">お問い合わせ</a>
+				</div>
+			</div>
 
+			<footer class="default-footer seo-footer">
+				<div class="container">
+					<div class="top-footer row">
+						<div class="col-md-3 col-sm-5 footer-logo">
+							<a href="~/Home/Index"><img src="~/images/logo/logo3.png" alt="Logo"></a>
+							<p>Lorem ipsum dolor  amet natum latine copiosa at quo, suas labore saperet  has there any quote for write lorem percit latineu suas dummy.</p>
+						</div>
 
+						<div class="col-md-2 col-sm-3 footer-list">
+							<h6>Information</h6>
+							<ul>
+								<li><a href="~/Home/About" class="tran3s">会社情報</a></li>
+								<li><a href="~/Home/Service" class="tran3s">事業内容</a></li>
+								<li><a href="~/Home/Contact" class="tran3s">お問合せ</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 col-sm-4 footer-latest-news">
+							<h6>Latest News</h6>
+							<div class="single-news">
+								<h5><a href="#" class="tran3s">How can be successfull in market place..</a></h5>
+								<span>13 Feb, 2017  /  Business</span>
+							</div>
+							<div class="single-news">
+								<h5><a href="#" class="tran3s">How can be successfull in market place..</a></h5>
+								<span>13 Feb, 2017  /  Business</span>
+							</div>
+						</div>
 
-		<!-- Scroll Top Button -->
-		<button class="scroll-top tran3s">
-			<i class="fa fa-angle-up" aria-hidden="true"></i>
-		</button>
+						<div class="col-md-4 col-xs-12 footer-subscribe">
+							<h6>Subscribe Us</h6>
+							<p>This sounded a very good reason, and Alice was quite pleased to know it.</p>
+							<form action="#">
+								<input type="text" placeholder="Enter your e-mail">
+								<button class="tran3s se-s-bg-color"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+							</form>
+						</div>
+					</div>
+				</div>
 
+				<div class="bottom-footer">
+					<div class="container">
+						<div class="wrapper clearfix">
+							<p class="float-left">Copyright &copy; 2017.Company name All rights reserved.</p>
+						</div>
+					</div>
+				</div>
+			</footer>
 
+			<button class="scroll-top tran3s">
+				<i class="fa fa-angle-up" aria-hidden="true"></i>
+			</button>
 
-
-
-		<!-- Js File_________________________________ -->
-		<!-- j Query -->
-		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-
-		<!-- Bootstrap JS -->
-		<script type="text/javascript" src="~/vendor/bootstrap/bootstrap.min.js"></script>
-
-		<script type="text/javascript" src="~/Scripts/sHover.js"></script>
-
-		<!-- Vendor js _________ -->
-		<!-- revolution -->
-		<script src="~/vendor/revolution/jquery.themepunch.tools.min.js"></script>
-		<script src="~/vendor/revolution/jquery.themepunch.revolution.min.js"></script>
-		<script type="text/javascript" src="~/vendor/revolution/revolution.extension.slideanims.min.js"></script>
-		<script type="text/javascript" src="~/vendor/revolution/revolution.extension.layeranimation.min.js"></script>
-		<script type="text/javascript" src="~/vendor/revolution/revolution.extension.navigation.min.js"></script>
-		<script type="text/javascript" src="~/vendor/revolution/revolution.extension.kenburn.min.js"></script>
-		<script type="text/javascript" src="~/vendor/revolution/revolution.extension.actions.min.js"></script>
-		<script type="text/javascript" src="~/vendor/revolution/revolution.extension.parallax.min.js"></script>
-		<script type="text/javascript" src="~/vendor/revolution/revolution.extension.migration.min.js"></script>
-		<!-- menu  -->
-		<script type="text/javascript" src="~/vendor/menu/src/js/jquery.slimmenu.js"></script>
-		<script type="text/javascript" src="~/vendor/jquery.easing.1.3.js"></script>
-		<!-- fancy box -->
-		<script type="text/javascript" src="~/vendor/fancy-box/jquery.fancybox.pack.js"></script>
-		<!-- MixitUp -->
-		<script type="text/javascript" src="~/vendor/jquery.mixitup.min.js"></script>
-		<!-- WOW js -->
-		<script type="text/javascript" src="~/vendor/WOW-master/dist/wow.min.js"></script>
-		<!-- owl.carousel -->
-		<script type="text/javascript" src="~/vendor/owl-carousel/owl.carousel.min.js"></script>
-		<!-- js count to -->
-		<script type="text/javascript" src="~/vendor/jquery.appear.js"></script>
-		<script type="text/javascript" src="~/vendor/jquery.countTo.js"></script>
-		<!-- Theme js -->
-		<script type="text/javascript" src="~/Scripts/theme.js"></script>
-	@*</div>*@
+			<script src="~/Scripts/jquery-1.10.2.js"></script>
+			<script type="text/javascript" src="~/vendor/bootstrap/bootstrap.min.js"></script>
+			<script type="text/javascript" src="~/Scripts/sHover.js"></script>
+			<script src="~/vendor/revolution/jquery.themepunch.tools.min.js"></script>
+			<script src="~/vendor/revolution/jquery.themepunch.revolution.min.js"></script>
+			<script type="text/javascript" src="~/vendor/revolution/revolution.extension.slideanims.min.js"></script>
+			<script type="text/javascript" src="~/vendor/revolution/revolution.extension.layeranimation.min.js"></script>
+			<script type="text/javascript" src="~/vendor/revolution/revolution.extension.navigation.min.js"></script>
+			<script type="text/javascript" src="~/vendor/revolution/revolution.extension.kenburn.min.js"></script>
+			<script type="text/javascript" src="~/vendor/revolution/revolution.extension.actions.min.js"></script>
+			<script type="text/javascript" src="~/vendor/revolution/revolution.extension.parallax.min.js"></script>
+			<script type="text/javascript" src="~/vendor/revolution/revolution.extension.migration.min.js"></script>
+			<script type="text/javascript" src="~/vendor/menu/src/js/jquery.slimmenu.js"></script>
+			<script type="text/javascript" src="~/vendor/jquery.easing.1.3.js"></script>
+			<script type="text/javascript" src="~/vendor/fancy-box/jquery.fancybox.pack.js"></script>
+			<script type="text/javascript" src="~/vendor/jquery.mixitup.min.js"></script>
+			<script type="text/javascript" src="~/vendor/WOW-master/dist/wow.min.js"></script>
+			<script type="text/javascript" src="~/vendor/owl-carousel/owl.carousel.min.js"></script>
+			<script type="text/javascript" src="~/vendor/jquery.appear.js"></script>
+			<script type="text/javascript" src="~/vendor/jquery.countTo.js"></script>
+			<script type="text/javascript" src="~/Scripts/theme.js"></script>
+		@*</div>*@
+	</div>
 	<script>
 		var a = new sHover("sHoverItem", "sIntro");
 		a.set({

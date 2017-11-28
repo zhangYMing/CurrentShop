@@ -205,7 +205,7 @@
 		}
 		return pos;
 	}
-	sHover.prototype.getDir=function(e,item){
+	sHover.prototype.getDir = function (e, item) {
 		var e=e||event;
 		var w = this.getStyle(item,'width'),
 	        h = this.getStyle(item,'height'),
