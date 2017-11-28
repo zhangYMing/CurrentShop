@@ -639,7 +639,7 @@ body .button-seven {
 }
 /* -------------------------- SEO Short Banner --------------------------- */
 .seo-theme .short-banner {
-	padding: 40px 0;
+	padding: 30px 0;
 	margin-bottom: 85px;
 }
 
@@ -948,7 +948,7 @@ body .button-seven {
 	.seo-theme .seo-counter .main-content {
 		position: relative;
 		z-index: 1;
-		padding-bottom: 80px;
+		padding-bottom: 20px;
 	}
 
 	.seo-theme .seo-counter img {
@@ -1029,6 +1029,7 @@ body .button-seven {
 	background: url(../images/home/8.jpg) no-repeat center;
 	background-size: cover;
 	z-index: 1;
+	margin-top:15px;
 }
 
 footer.seo-footer:before {
@@ -1442,6 +1443,7 @@ footer.seo-footer p {
 		padding: 0 10px;
 		width: 20%;
 		float: left;
+		margin-top:10px;
 	}
 
 .mix {
