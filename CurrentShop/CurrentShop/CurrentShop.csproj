@@ -225,6 +225,7 @@
     <Content Include="images\home\8.jpg" />
     <Content Include="images\home\9.jpg" />
     <Content Include="images\home\bg.jpg" />
+    <Content Include="images\home\object.jpg" />
     <Content Include="images\home\object.png" />
     <Content Include="images\home\object2.png" />
     <Content Include="images\home\object3.png" />
@@ -286,6 +287,7 @@
     <Content Include="fonts\icon\font\Flaticon.eot" />
     <Content Include="fonts\icon\font\Flaticon.ttf" />
     <Content Include="fonts\icon\font\Flaticon.woff" />
+    <None Include="Properties\PublishProfiles\CurrentShop.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
