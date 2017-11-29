@@ -225,6 +225,7 @@
     <Content Include="images\home\8.jpg" />
     <Content Include="images\home\9.jpg" />
     <Content Include="images\home\bg.jpg" />
+    <Content Include="images\home\bg_accessory.png" />
     <Content Include="images\home\object.jpg" />
     <Content Include="images\home\object.png" />
     <Content Include="images\home\object2.png" />

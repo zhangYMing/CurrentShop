@@ -348,6 +348,7 @@ body .button-seven {
 .theme-team-style-one .single-team-member .title ul li a:hover, .seo-theme .theme-blog-sidebarOne .sidebar-keywords ul li a:hover, .seo-theme .theme-blog-large-sideOne .leave-reply form button:hover,
 .seo-theme .error-page a:hover, #mega-menu-holder ul.dropdown li a:hover, .seo-theme .pricing-plan .single-price-table.active {
 	background: #ffc323;
+	/*background:url(/images/home/bg_accessory.png) repeat top left;*/
 }
 
 .seo-theme .theme-main-menu .right-content a, .seo-theme .short-banner a:hover, .seo-theme .company-goal .single-goal:hover .img-icon:before, .seo-theme .our-project .mixitUp-menu li.active,
@@ -639,7 +640,7 @@ body .button-seven {
 }
 /* -------------------------- SEO Short Banner --------------------------- */
 .seo-theme .short-banner {
-	padding: 30px 0;
+	padding: 10px 0;
 	margin-bottom: 85px;
 }
 
