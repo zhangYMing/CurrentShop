@@ -30,12 +30,12 @@
  			
 			//绑定事件
 			function eventRegister(item,intro){
-				//_this.myAddEvent(item,'mouseover',function(ev){
-				//	_this.hoverIn(ev,item,intro);
-				//});
-				//_this.myAddEvent(sItemArr[i],'mouseout',function(ev){
-				//	_this.hoverOut(ev,item,intro);
-				//});
+				_this.myAddEvent(item,'mouseover',function(ev){
+					_this.hoverIn(ev,item,intro);
+				});
+				_this.myAddEvent(sItemArr[i],'mouseout',function(ev){
+					_this.hoverOut(ev,item,intro);
+				});
 			}
 			eventRegister(thisItem,sIntro);
 		}
