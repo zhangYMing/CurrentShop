@@ -115,8 +115,8 @@ function googleMap () {
         
         map.addMarker({
             icon: 'images/logo/map3.png',
-            lat: 40.925372,
-              lng: -74.276544,
+            lat: 78.21345,
+              lng: -50.1236,
               title: 'Ollo Main Office',
         });
       }

@@ -84,6 +84,7 @@
     -moz-transition: all .3s linear;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
+	font-weight:bold;
 }
 
 #mega-menu-holder li ul {

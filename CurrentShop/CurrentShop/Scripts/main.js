@@ -86,9 +86,6 @@
 
 	};
 
-	
-
-	
 	$(function(){
 		magnifPopup();
 		offCanvass();

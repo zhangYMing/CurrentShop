@@ -138,10 +138,9 @@
 }
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: normal;
 	color: rgba(0,0,0,0.6);
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 28px;
 	position: relative;
 }
@@ -1173,7 +1172,7 @@ footer.seo-footer p {
 
 	.seo-theme .theme-inner-banner .opacity {
 		background: rgba(255,195,25,0.97);
-		padding: 55px 0;
+		padding: 20px 0;
 		text-align: center;
 	}
 
