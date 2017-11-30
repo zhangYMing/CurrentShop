@@ -328,6 +328,12 @@
     <Content Include="fonts\icon\font\Flaticon.eot" />
     <Content Include="fonts\icon\font\Flaticon.ttf" />
     <Content Include="fonts\icon\font\Flaticon.woff" />
+    <Content Include="font\Lato-Italic.ttf" />
+    <Content Include="font\Lato-Italic.woff" />
+    <Content Include="font\NotoSansCJKjp-DemiLight.ttf" />
+    <Content Include="font\NotoSansCJKjp-DemiLight.woff" />
+    <Content Include="font\NotoSansCJKjp-Regular.ttf" />
+    <Content Include="font\NotoSansCJKjp-Regular.woff" />
     <None Include="Properties\PublishProfiles\CurrentShop.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

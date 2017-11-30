@@ -1,4 +1,4 @@
-﻿@{ 
+﻿@{
 	Layout = null;
 }
 <!DOCTYPE html>
@@ -11,6 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="~/Content/style.css">
 	<link rel="stylesheet" type="text/css" href="~/Content/responsive.css">
 	<link rel="stylesheet" type="text/css" href="~/Content/main.css">
+	<style>
+		.seo-theme .theme-main-menu {
+			box-shadow: none;
+		}
+	</style>
 </head>
 <body class="seo-theme">
 	<div class="main-page-wrapper">
@@ -221,11 +226,25 @@
 				</dl>
 			</div>
 		</section>
+		<section id="company-intro-section" class="company-section">
+			<div class="section_inner">
+				<h2 class="section_title small">
+					<span class="en">About Parente</span>
+					<span class="ja">パレンテについて</span>
+				</h2>
+				<p class="txt">
+					1977 年に創業。2002 年にコンタクトレンズ販売を開始、2008年よりコンタクトレンズ EC事業に参入し、時代の流れとお客様のニーズを見極め成長を続けてきました。<br>
+					自社コンタクトブランド「WAVE」の開発・ロジスティクスセンターの設置・お客様の声を頂くための実店舗運営・サポートセンターの設置等、お客様へ「ここちよさ」を提供するための仕組みを導入し、2016年8月時点で約440万人のオンライン会員様を保有するまでに成長いたしました。<br>
+					これまでに蓄えたノウハウを活かし、IT企業として、コンタクトレンズ事業の枠に捕らわれることなく、チャレンジを続けていきます。
+				</p>
+			</div>
+		</section>
 		<div class="our-service m-fix">
 			<div class="container">
 				<div class="seo-title-one text-center">
-					<h2>成功商品例</h2>
-					<h6>@DateTime.Now.ToString("yyyy-MM-dd") 更新</h6>
+					<h2 class="section_title small">
+						<span class="en">Successed Products</span>
+					</h2>
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
@@ -247,77 +266,6 @@
 							<img src="~/images/icon/4.png" alt="icon">
 							<h5><a href="~/Home/Service" class="tran4s">Great Security</a></h5>
 							<p>I have always wanted to neighbor just like. I've alway wanted to live neighborhood with you. </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="our-team theme-team-style-one">
-			<div class="container">
-				<div class="seo-title-one text-center">
-					<h2>Executive Team</h2>
-					<h6>This I have produced as a scantling of Jack’s great eloquence and the force of <br> his reasoning upon such abstruse matters</h6>
-				</div>
-
-				<div class="row">
-					<div class="col-md-3 col-xs-6 wow fadeInUp">
-						<div class="single-team-member text-center">
-							<div class="img"><img src="~/images/team/4.jpg" alt="Image"></div>
-							<div class="title">
-								<h6><a href="#" class="tran3s">Antonio Creighton</a></h6>
-								<span>CEO at Google</span>
-								<p>Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
-								<ul>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="single-team-member text-center">
-							<div class="img"><img src="~/images/team/5.jpg" alt="Image"></div>
-							<div class="title">
-								<h6><a href="#" class="tran3s">Antonio Creighton</a></h6>
-								<span>CEO at Google</span>
-								<p>Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
-								<ul>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.2s">
-						<div class="single-team-member text-center">
-							<div class="img"><img src="~/images/team/6.jpg" alt="Image"></div>
-							<div class="title">
-								<h6><a href="#" class="tran3s">Antonio Breighton</a></h6>
-								<span>CEO at Google</span>
-								<p>Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
-								<ul>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-3 col-xs-6 wow fadeInUp" data-wow-delay="0.3s">
-						<div class="single-team-member text-center">
-							<div class="img"><img src="~/images/team/7.jpg" alt="Image"></div>
-							<div class="title">
-								<h6><a href="#" class="tran3s">Zubayer Hasan</a></h6>
-								<span>CEO at Google</span>
-								<p>Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.</p>
-								<ul>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-									<li><a href="" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-								</ul>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -377,8 +325,7 @@
 		<button class="scroll-top tran3s hvr-shutter-out-horizontal">
 			<i class="fa fa-angle-up" aria-hidden="true"></i>
 		</button>
-
-		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+		<script src="~/Scripts/jquery-1.10.2.js"></script>
 		<script type="text/javascript" src="~/vendor/bootstrap/bootstrap.min.js"></script>
 		<script type="text/javascript" src="~/vendor/fancy-box/jquery.fancybox.pack.js"></script>
 		<script type="text/javascript" src="~/vendor/menu/src/js/jquery.slimmenu.js"></script>

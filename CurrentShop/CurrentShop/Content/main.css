@@ -2182,7 +2182,7 @@ p .bg_white {
 
 	.company-info-table th,
 	.company-info-table td {
-		padding: 1.5em 2.5em;
+		padding: 1em 2.5em;
 	}
 
 	.company-info-table th {
@@ -4414,7 +4414,7 @@ html {
 
 ::selection {
 	color: #fff;
-	background: #e52d27;
+	background: #ffc323;
 	text-shadow: none;
 }
 
