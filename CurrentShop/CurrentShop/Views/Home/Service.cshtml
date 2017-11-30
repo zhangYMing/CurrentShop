@@ -1,72 +1,34 @@
-﻿@{ 
+﻿@{
 	Layout = null;
 }
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<!-- For IE -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-	<!-- For Resposive Device -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title></title>
-
-	<!-- Main style sheet -->
 	<link rel="stylesheet" type="text/css" href="~/Content/style.css">
-	<!-- responsive style sheet -->
 	<link rel="stylesheet" type="text/css" href="~/Content/responsive.css">
-
-
-	<!-- Fix Internet Explorer ______________________________________-->
-	<!--[if lt IE 9]>
-		<script src="http://www.jq22.com/jquery/html5.min.js"></script>
-		<script src="vendor/html5shiv.js"></script>
-		<script src="vendor/respond.js"></script>
-	<![endif]-->
-
+	<link rel="stylesheet" type="text/css" href="~/Content/example.css">
 </head>
 
 <body class="seo-theme">
 	<div class="main-page-wrapper">
-
-		<!-- ===================================================
-			Loading Transition
-		==================================================== -->
 		<div id="loader-wrapper">
 			<div id="loader"></div>
 		</div>
-
-
-		<!--
-		=============================================
-			Theme Header
-		==============================================
-		-->
 		<header class="seo-header">
 			<div class="top-header">
 				<div class="container">
-					@*<div class="float-left left-side">
-						<ul>
-							<li>Follow Us</li>
-							<li><a href="" class="tran3s round-border"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s round-border"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s round-border"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-							<li><a href="" class="tran3s round-border"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-						</ul>
-					</div>*@
-
 					<div class="float-right right-side">
 						<ul>
 							<li><a href="#" class="tran3s"><i class="flaticon-envelope"></i> companymail@gamil.com</a></li>
 							<li><a href="#" class="tran3s"><i class="flaticon-phone"></i> 0 (855) 233-5385</a></li>
 						</ul>
-					</div> <!-- /.right-side -->
-				</div> <!-- /.container -->
-			</div> <!-- /.top-header -->
-			<!-- ============================ Theme Menu ========================= -->
+					</div>
+				</div>
+			</div>
 			<div class="theme-main-menu">
 				<div class="container">
 					<div class="main-container clearfix">
@@ -84,45 +46,34 @@
 										<button class="se-p-bg-color"><i class="flaticon-search"></i></button>
 									</form>
 								</div>
-							</div> <!-- /.search-box -->
-						</div> <!-- /.right-content -->
-						<!-- ============== Menu Warpper ================ -->
+							</div>
+						</div>
 						<div class="menu-wrapper float-right">
 							<nav id="mega-menu-holder" class="clearfix">
 								<ul class="clearfix">
 									<li><a href="~/Home/Index">主页</a></li>
 									<li><a href="~/Home/About">公司信息</a></li>
-									<li><a href="~/Home/Service">主要事业内容</a></li>
-									<li><a href="~/Home/Contact">公司法人</a></li>
+									<li><a href="~/Home/Service">商品</a></li>
+									<li><a href="~/Home/Contact">公司地址</a></li>
 								</ul>
-							</nav> <!-- /#mega-menu-holder -->
-						</div> <!-- /.menu-wrapper -->
-					</div> <!-- /.main-container -->
-				</div> <!-- /.container -->
-			</div> <!-- /.theme-main-menu -->
-		</header> <!-- /.seo-header -->
-		<!--
-		=============================================
-			Theme Inner Banner
-		==============================================
-		-->
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 		<div class="theme-inner-banner">
 			<div class="opacity">
 				<div class="container">
-					<h2 class="float-left">Our Service</h2>
+					<h2 class="float-left">商品</h2>
 					<ul class="float-right">
-						<li><a href="~/Home/Index" class="tran3s">Home</a></li>
+						<li><a href="~/Home/Index" class="tran3s">主页</a></li>
 						<li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-						<li>Our Service</li>
+						<li>商品</li>
 					</ul>
 				</div>
-			</div> <!-- /.opacity -->
-		</div> <!-- /.theme-inner-banner -->
-		<!--
-		=============================================
-			Welocome To SEO
-		==============================================
-		-->
+			</div>
+		</div>
 		<div class="welcome-seo">
 			<div class="container">
 				<div>
@@ -154,106 +105,113 @@
 									<p>Certified by digital marketing </p>
 								</li>
 							</ul>
-						</div> <!-- /.col- -->
+						</div>
 						<div class="col-lg-6 col-md-5 col-xs-12"><img src="~/images/home/object2.png" alt="Image"></div>
-					</div> <!-- /.row -->
-				</div> <!-- /.wrapper -->
-			</div> <!-- /.container -->
-		</div> <!-- /.welcome-seo -->
-		<!--
-		=============================================
-			Our Service
-		==============================================
-		-->
-		<div class="our-service bg-color">
-			<div class="container">
-				<div class="seo-title-one text-center">
-					<h2>Service We Provide</h2>
-					<h6>We have all type SEO &amp; Marketing of service for our customer</h6>
-				</div> <!-- /.seo-title-one -->
-
-				<div class="row">
-					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp">
-						<div class="single-service tran4s">
-							<img src="~/images/icon/5.png" alt="icon">
-							<h2>01</h2>
-							<h5><a href="~/Home/Service" class="tran4s">Google Analyzing</a></h5>
-							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
-					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="single-service tran4s">
-							<img src="~/images/icon/6.png" alt="icon">
-							<h2>02</h2>
-							<h5><a href="~/Home/Service" class="tran4s">Content Research</a></h5>
-							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
-					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-						<div class="single-service tran4s">
-							<img src="~/images/icon/7.png" alt="icon">
-							<h2>03</h2>
-							<h5><a href="~/Home/Service" class="tran4s">Keyword Suggestion</a></h5>
-							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
-					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="single-service tran4s">
-							<img src="~/images/icon/8.png" alt="icon">
-							<h2>04</h2>
-							<h5><a href="~/Home/Service" class="tran4s">link Optimization</a></h5>
-							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
-					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-						<div class="single-service tran4s">
-							<img src="~/images/icon/9.png" alt="icon">
-							<h2>05</h2>
-							<h5><a href="~/Home/Service" class="tran4s">SEO Optimization</a></h5>
-							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
-					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-						<div class="single-service tran4s">
-							<img src="~/images/icon/10.png" alt="icon">
-							<h2>06</h2>
-							<h5><a href="~/Home/Service" class="tran4s">Social Media Marketing</a></h5>
-							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
-					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.1s">
-						<div class="single-service tran4s">
-							<img src="~/images/icon/11.png" alt="icon">
-							<h2>07</h2>
-							<h5><a href="~/Home/Service" class="tran4s">Mobile Optimization</a></h5>
-							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
-					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.2s">
-						<div class="single-service tran4s">
-							<img src="~/images/icon/12.png" alt="icon">
-							<h2>08</h2>
-							<h5><a href="~/Home/Service" class="tran4s">Email Maketing</a></h5>
-							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
-					<div class="col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.3s">
-						<div class="single-service tran4s">
-							<img src="~/images/icon/13.png" alt="icon">
-							<h2>09</h2>
-							<h5><a href="~/Home/Service" class="tran4s">SEO Audit &amp; Review</a></h5>
-							<p>We’ll generate a sitemap for your site, submit it to search engine is and track crawler access.</p>
-						</div> <!-- /.single-service -->
-					</div> <!-- /.col- -->
+					</div>
 				</div>
-			</div> <!-- /.container -->
-		</div> <!-- /.our-service -->
-		<!--
-		=============================================
-			Partner Logo
-		==============================================
-		-->
-		<div class="partners-section">
+			</div>
+		</div>
+		<div id="part3" class="part">
+			<div class="container">
+				<div id="item1" class="sHoverItem">
+					<img id="img1" src="~/ProductImages/1.jpg">
+					<span id="intro1" class="sIntro">
+						<a>Flowers</a>
+						<a>Flowers are so inconsistent! But I was too young to know how to love her</a>
+						@*<button>inconsistent</button>*@
+					</span>
+				</div>
+				<div id="item2" class="sHoverItem">
+					<img src="~/ProductImages/2.jpg">
+					<span class="sIntro">
+						<a>You know</a>
+						<a>one loves the sunset, when one is so sad</a>
+						@*<button>sunset</button>*@
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/3.jpg">
+					<span class="sIntro">
+						<a>For</a>
+						<a>For she did not want him to see her crying. She was such a proud flower</a>
+						@*<button>crying</button>*@
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/4.jpg">
+					<span class="sIntro">
+						<a>Volcanoes</a>
+						<a>It is of some use to my volcanoes, and it is of some use to my flower, that I own them. But you are of no </a>
+						@*<button>use to the stars</button>*@
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/5.jpg">
+					<span class="sIntro">
+						<a>I thought</a>
+						<a>I thought that I was rich, with a flower that was unique in all the world; and all I had was a common</a>
+						@*<button>rose</button>*@
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/6.jpg">
+					<span class="sIntro">
+						<a>For she</a>
+						<a>For she did not want him to see her crying. She was such a proud flower</a>
+						@*<button>a proud flower</button>*@
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/7.jpg">
+					<span class="sIntro">
+						<a>Thorns</a>
+						<a>She has only four thorns to defend herself against the world. And I have left on my planet, all alone!</a>
+						@*<button>alone</button>*@
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/8.jpg">
+					<span class="sIntro">
+						<a>A little boy</a>
+						<a>To me, you are still nothing more than a little boy who is just like a hundred thousand other little boys.</a>
+						@*<button>boys</button>*@
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/9.jpg">
+					<span class="sIntro">
+						<a>And I</a>
+						<a>And I have no need of you. And you, on your part, have no need of me.</a>
+						@*<button>no need of me</button>*@
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/10.jpg">
+					<span class="sIntro">
+						<a>Foxes</a>
+						<a>I am nothing more than a fox like a hundred thousand other foxes.</a>
+						@*<button>nothing</button>*@
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/11.jpg">
+					<span class="sIntro">
+						<a>Tame</a>
+						<a>But if you tame me, then we shall need each other.</a>
+						@*<button>need</button>*@
+					</span>
+				</div>
+				<div class="sHoverItem">
+					<img src="~/ProductImages/12.jpg">
+					<span class="sIntro">
+						<a>Unique</a>
+						<a>To me,you will be unique in all the world. To you, I shall be unique in all the world. </a>
+						@*<button>unique</button>*@
+					</span>
+				</div>
+			</div>
+		</div>
+		@*<div class="partners-section">
 			<div class="container">
 				<div class="row">
 					<div id="partner-logo">
@@ -262,38 +220,22 @@
 						<div class="item"><img src="~/images/logo/p11.png" alt="logo"></div>
 						<div class="item"><img src="~/images/logo/p12.png" alt="logo"></div>
 						<div class="item"><img src="~/images/logo/p10.png" alt="logo"></div>
-					</div> <!-- End .partner_logo -->
+					</div>
 				</div>
 			</div>
-		</div>
-
-
-		<!--
-		=============================================
-			Bottom Footer Banner
-		==============================================
-		-->
-		<div class="bottom-footer-banner se-s-bg-color">
+		</div>*@
+		@*<div class="bottom-footer-banner se-s-bg-color">
 			<div class="container">
-				@*<h3 class="float-left">Let’s talk about your mext project.</h3>*@
 				<a href="~/Home/Contact" class="float-right button-five">お問い合わせ</a>
 			</div>
-		</div>
-
-
-		<!--
-		=============================================
-			Footer
-		==============================================
-		-->
+		</div>*@
 		<footer class="default-footer seo-footer">
 			<div class="container">
 				<div class="top-footer row">
 					<div class="col-md-3 col-sm-5 footer-logo">
 						<a href="~/Home/Index"><img src="~/images/logo/logo3.png" alt="Logo"></a>
 						<p>Lorem ipsum dolor  amet natum latine copiosa at quo, suas labore saperet  has there any quote for write lorem percit latineu suas dummy.</p>
-					</div> <!-- /.footer-logo -->
-
+					</div>
 					<div class="col-md-2 col-sm-3 footer-list">
 						<h6>Information</h6>
 						<ul>
@@ -301,19 +243,18 @@
 							<li><a href="~/Home/Service" class="tran3s">事業内容</a></li>
 							<li><a href="~/Home/Contact" class="tran3s">お問い合わせ</a></li>
 						</ul>
-					</div> <!-- /.footer-list -->
+					</div>
 					<div class="col-md-3 col-sm-4 footer-latest-news">
 						<h6>Latest News</h6>
 						<div class="single-news">
 							<h5><a href="#" class="tran3s">How can be successfull in market place..</a></h5>
 							<span>13 Feb, 2017  /  Business</span>
-						</div> <!-- /.single-news -->
+						</div>
 						<div class="single-news">
 							<h5><a href="#" class="tran3s">How can be successfull in market place..</a></h5>
 							<span>13 Feb, 2017  /  Business</span>
-						</div> <!-- /.single-news -->
-					</div> <!-- /.footer-latest-news -->
-
+						</div>
+					</div>
 					<div class="col-md-4 col-xs-12 footer-subscribe">
 						<h6>Subscribe Us</h6>
 						<p>This sounded a very good reason, and Alice was quite pleased to know it.</p>
@@ -321,10 +262,9 @@
 							<input type="text" placeholder="Enter your e-mail">
 							<button class="tran3s se-s-bg-color"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
 						</form>
-					</div> <!-- /.footer-subscribe -->
-				</div> <!-- /.top-footer -->
-			</div> <!-- /.container -->
-
+					</div>
+				</div>
+			</div>
 			<div class="bottom-footer">
 				<div class="container">
 					<div class="wrapper clearfix">
@@ -336,40 +276,29 @@
 							<li><a href="" class="tran3s round-border"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							<li><a href="" class="tran3s round-border"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
 						</ul>
-					</div> <!-- /.wrapper -->
-				</div> <!-- /.container -->
-			</div> <!-- /.bottom-footer -->
+					</div>
+				</div>
+			</div>
 		</footer>
-
-
-
-		<!-- Scroll Top Button -->
 		<button class="scroll-top tran3s hvr-shutter-out-horizontal">
 			<i class="fa fa-angle-up" aria-hidden="true"></i>
 		</button>
-
-
-
-		<!-- Js File_________________________________ -->
-		<!-- j Query -->
 		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
-
-		<!-- Bootstrap JS -->
 		<script type="text/javascript" src="~/vendor/bootstrap/bootstrap.min.js"></script>
-
-		<!-- Vendor js _________ -->
-		<!-- menu  -->
 		<script type="text/javascript" src="~/vendor/menu/src/js/jquery.slimmenu.js"></script>
 		<script type="text/javascript" src="~/vendor/jquery.easing.1.3.js"></script>
-
-		<!-- WOW js -->
 		<script type="text/javascript" src="~/vendor/WOW-master/dist/wow.min.js"></script>
-		<!-- owl.carousel -->
 		<script type="text/javascript" src="~/vendor/owl-carousel/owl.carousel.min.js"></script>
-
-		<!-- Theme js -->
 		<script type="text/javascript" src="~/Scripts/theme.js"></script>
-
-	</div> <!-- /.main-page-wrapper -->
+		<script type="text/javascript" src="~/Scripts/sHover.js"></script>
+		<script>
+			var a = new sHover("sHoverItem", "sIntro");
+			a.set({
+				slideSpeed: 5,
+				opacityChange: true,
+				opacity: 80
+			});
+		</script>
+	</div>
 </body>
 </html>
