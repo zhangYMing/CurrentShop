@@ -1,42 +1,4 @@
-﻿@charset "UTF-8";
-
-@media screen and (min-width: 768px) {
-	html {
-		line-height: 2.20142857;
-		letter-spacing: .2em;
-	}
-
-		html.isIE {
-			letter-spacing: .1em;
-		}
-
-	.topic_figure .txt,
-	.news-type,
-	.news-link,
-	.news-detail .txt,
-	.privacy-section,
-	.sub-privacy-section {
-		line-height: 1.9;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	html,
-	.topic_figure .txt,
-	.news-type,
-	.news-link,
-	.news-detail .txt,
-	.privacy-section,
-	.sub-privacy-section {
-		line-height: 1.33068562;
-	}
-}
-
-.txt {
-	color: #2c2d30;
-}
-
-.red {
+﻿.red {
 	color: #e52d27;
 }
 
@@ -51,7 +13,6 @@
 .gr3 {
 	color: #e3e4e6;
 }
-
 /* ==========================================================================
    Parente
    ========================================================================== */
@@ -4520,13 +4481,6 @@ img {
 	src: url('../font/NotoSansCJKjp-Regular.eot');
 	src: url('../font/NotoSansCJKjp-Regular.eot?#iefix') format('embedded-opentype'), url('../font/NotoSansCJKjp-Regular.woff') format('woff'), url('../font/NotoSansCJKjp-Regular.ttf') format('truetype');
 }
-
-body {
-	font-size: 1.4em;
-	font-family: 'Noto Sans Japanese', sans-serif;
-	font-weight: 300;
-}
-
 .sub-privacy-section_title {
 	font-weight: 400;
 }
