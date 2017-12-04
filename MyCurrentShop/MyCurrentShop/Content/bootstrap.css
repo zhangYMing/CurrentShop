@@ -44,7 +44,7 @@ display: inline-block;
 .header {
 	z-index:9999;
 	border-bottom: 4px #4CAF50 solid;
-	/*position:fixed !important;*/
+	position:fixed !important;
 }
 audio:not([controls]) {
 display: none;
