@@ -1939,7 +1939,7 @@ padding-left: 8px;
 
 @media screen and (min-width: 768px) {
 .company-section {
-padding: 65px 0;
+padding: 40px 0;
 }
 
 #company-history-section .section_inner > .txt,
@@ -2174,7 +2174,7 @@ text-align: left;
 
 .history-list dt {
 padding-top: 1em;
-color: #b6b7ba;
+color: #4CAF50;
 font-size:13px;
 }
 
