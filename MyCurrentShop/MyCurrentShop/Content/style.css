@@ -1946,6 +1946,7 @@ p.write {
 	border: none;
 	text-indent: 100%;
 	background: url(../images/move-top.png) no-repeat 0px 0px;
+	z-index:999999;
 }
 /*--Starts-Responsive--*/
 @media (max-width:1440px) {
